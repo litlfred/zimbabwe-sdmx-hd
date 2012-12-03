@@ -1,0 +1,10 @@
+sdmxhdid,sdmxhdname
+A,Annually
+S,"Half-yearly, semester,biannual"
+Q,Quarterly
+M,Monthly
+W,Weekly
+D,Daily
+B,Daily - business week
+N,Minutely
+Z,"Biennially, every two years"
