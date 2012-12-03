@@ -1,0 +1,1441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeList id="CL_POST" agencyID="ZW_MOHCW" version="1.0" isFinal="false">
+  <Name xml:lang="en">Post</Name>
+  <Code value="66">
+    <Description>ACCOUNTANT SENIOR/ PRINCIPAL</Description>
+  </Code>
+  <Code value="042284">
+    <Description>ACCOUNTING ASSISTANT</Description>
+  </Code>
+  <Code value="017369">
+    <Description>ACCOUNTS CLERK</Description>
+  </Code>
+  <Code value="041517">
+    <Description>ADMINISTRATION ASSISTANT</Description>
+  </Code>
+  <Code value="041102">
+    <Description>ADMINISTRATION OFFICER</Description>
+  </Code>
+  <Code value="011519">
+    <Description>ADMINISTRATIVE OFFICER</Description>
+  </Code>
+  <Code value="73">
+    <Description>ADOLESCENT HEALTH SERVICES MANAGER</Description>
+  </Code>
+  <Code value="012589">
+    <Description>ALLOCATIONS OFFICER</Description>
+  </Code>
+  <Code value="035567">
+    <Description>AMBULANCE DRIVER/ SENIOR</Description>
+  </Code>
+  <Code value="050258">
+    <Description>ANALYTICAL CHEMIST</Description>
+  </Code>
+  <Code value="036691">
+    <Description>ARTISAN</Description>
+  </Code>
+  <Code value="056610">
+    <Description>ARTIST</Description>
+  </Code>
+  <Code value="055687">
+    <Description>ASSISTANT ARTISANS</Description>
+  </Code>
+  <Code value="014759">
+    <Description>ASSISTANT BUYER</Description>
+  </Code>
+  <Code value="113850">
+    <Description>ASSISTANT CATERING SUPERVISOR</Description>
+  </Code>
+  <Code value="030022">
+    <Description>ASSISTANT CHIEF RADIOGRAPHER</Description>
+  </Code>
+  <Code value="030024">
+    <Description>ASSISTANT CLINICAL PSYCHOLOGIST</Description>
+  </Code>
+  <Code value="014566">
+    <Description>ASSISTANT HEALTH INFORMATION OFFICER</Description>
+  </Code>
+  <Code value="996541">
+    <Description>ASSISTANT HOSTELS SUPERVISOR</Description>
+  </Code>
+  <Code value="030027">
+    <Description>ASSISTANT LAUNDRY SUPERINTENDTENT</Description>
+  </Code>
+  <Code value="045940">
+    <Description>ASSISTANT LIBRARIAN</Description>
+  </Code>
+  <Code value="074440">
+    <Description>ASSISTANT NUTRITIONIST</Description>
+  </Code>
+  <Code value="885204">
+    <Description>ASSISTANT SYSTEMS ADMINISTRATOR</Description>
+  </Code>
+  <Code value="042024">
+    <Description>AUDIT ASSISTANT</Description>
+  </Code>
+  <Code value="65">
+    <Description>AUDITOR /SENIOR/ PRINCIPAL</Description>
+  </Code>
+  <Code value="014567">
+    <Description>BAKER</Description>
+  </Code>
+  <Code value="116411">
+    <Description>BLOCKMAN</Description>
+  </Code>
+  <Code value="80005">
+    <Description>BOARD MEMBER</Description>
+  </Code>
+  <Code value="020256">
+    <Description>BOOT MAKER</Description>
+  </Code>
+  <Code value="014756">
+    <Description>BUILDER / BRICKLAYER</Description>
+  </Code>
+  <Code value="137720">
+    <Description>BUTCHERY HAND</Description>
+  </Code>
+  <Code value="80000">
+    <Description>CADET</Description>
+  </Code>
+  <Code value="063789">
+    <Description>CARETAKER / GROUNDSMAN</Description>
+  </Code>
+  <Code value="963525">
+    <Description>CARPENTER</Description>
+  </Code>
+  <Code value="665214">
+    <Description>CARPENTER (I/II/III)</Description>
+  </Code>
+  <Code value="119000">
+    <Description>CATERING MANAGER /SUPERINTENDENT</Description>
+  </Code>
+  <Code value="128273">
+    <Description>CATERING SUPERVISOR</Description>
+  </Code>
+  <Code value="0147963">
+    <Description>CATERING ATTENDANT</Description>
+  </Code>
+  <Code value="965834">
+    <Description>CATERING ATTENDANT I/II</Description>
+  </Code>
+  <Code value="80006">
+    <Description>CHAIRMAN (HSB)</Description>
+  </Code>
+  <Code value="014589">
+    <Description>CHARGE HAND</Description>
+  </Code>
+  <Code value="369852">
+    <Description>CHIEF ACCOUNTANT</Description>
+  </Code>
+  <Code value="074162">
+    <Description>CHIEF BUYER</Description>
+  </Code>
+  <Code value="0007">
+    <Description>CHIEF CORPORATE SERVICE OFFICER</Description>
+  </Code>
+  <Code value="073726">
+    <Description>CHIEF DIETICIAN (DIRECTOR OF NUTRITION0</Description>
+  </Code>
+  <Code value="05">
+    <Description>CHIEF ENGINEER</Description>
+  </Code>
+  <Code value="012569">
+    <Description>CHIEF EXECUTIVE OFFICER</Description>
+  </Code>
+  <Code value="23233">
+    <Description>CHIEF FIELD SUPERVISOR</Description>
+  </Code>
+  <Code value="045123">
+    <Description>CHIEF GOVERNMENT PATHOLOGIST</Description>
+  </Code>
+  <Code value="014693">
+    <Description>CHIEF HOSPITAL EQUIPMENT TECHNICIAN</Description>
+  </Code>
+  <Code value="067992">
+    <Description>CHIEF HOSPITAL TECHNOLOGIST-HIGHER</Description>
+  </Code>
+  <Code value="046983">
+    <Description>CHIEF INTERNAL AUDIT</Description>
+  </Code>
+  <Code value="045789">
+    <Description>CHIEF MEDICAL LABORATORY SCIENTIST</Description>
+  </Code>
+  <Code value="068092">
+    <Description>CHIEF MEDICAL LABORATORY TECHNOLOGIST</Description>
+  </Code>
+  <Code value="056883">
+    <Description>CHIEF ORTHOPAEDIC TECHNOLOGIST</Description>
+  </Code>
+  <Code value="048398">
+    <Description>CHIEF PHARMACIST</Description>
+  </Code>
+  <Code value="047852">
+    <Description>CHIEF PHYSICIST</Description>
+  </Code>
+  <Code value="23">
+    <Description>CHIEF RADIATION PROTECTION OFFICER</Description>
+  </Code>
+  <Code value="047567">
+    <Description>CHIEF RADIOGRAPHER</Description>
+  </Code>
+  <Code value="068202">
+    <Description>CHIEF SCIENTIFIC MEDICAL LABORATORY TECHNCIAN</Description>
+  </Code>
+  <Code value="074577">
+    <Description>CHIEF THERAPIST</Description>
+  </Code>
+  <Code value="114100">
+    <Description>CLEANING SURPERVISOR</Description>
+  </Code>
+  <Code value="039727">
+    <Description>CLERK</Description>
+  </Code>
+  <Code value="074637">
+    <Description>CLINICAL INSTRUCTOR</Description>
+  </Code>
+  <Code value="37">
+    <Description>CLINICAL LABORATORY SERVICES COORDINATOR</Description>
+  </Code>
+  <Code value="000007">
+    <Description>CLINICAL NURSING OFFICER</Description>
+  </Code>
+  <Code value="047875">
+    <Description>CLINICAL PSYCHOLOGIST/ SENIOR</Description>
+  </Code>
+  <Code value="122">
+    <Description>COMISSIONING OFFICER</Description>
+  </Code>
+  <Code value="524163">
+    <Description>COMPUTER TECHNICIAN</Description>
+  </Code>
+  <Code value="83">
+    <Description>CONDOM PROMOTION AND COMMUNICATION MANAGER</Description>
+  </Code>
+  <Code value="120488">
+    <Description>COOK</Description>
+  </Code>
+  <Code value="138854">
+    <Description>COPYING/DUPLICATING OPERATOR SENIOR</Description>
+  </Code>
+  <Code value="0010">
+    <Description>CORPORATE SERVICE OFFICER</Description>
+  </Code>
+  <Code value="81">
+    <Description>COUNSELLING SERVICES MANAGER</Description>
+  </Code>
+  <Code value="300030">
+    <Description>COXSWAIN</Description>
+  </Code>
+  <Code value="111550">
+    <Description>CRECHE SUPERVISOR</Description>
+  </Code>
+  <Code value="128400">
+    <Description>CSSD PACKER/ SENIOR</Description>
+  </Code>
+  <Code value="00000">
+    <Description>CUBAN MEDICAL PERSONAL</Description>
+  </Code>
+  <Code value="137860">
+    <Description>DARKROOM ASSISTANT</Description>
+  </Code>
+  <Code value="0011">
+    <Description>DATA CAPTURE CLERK</Description>
+  </Code>
+  <Code value="965823">
+    <Description>DATA CAPTURE SUPERVISOR</Description>
+  </Code>
+  <Code value="112760">
+    <Description>DENTAL SURGERY ASSISTANT</Description>
+  </Code>
+  <Code value="056650">
+    <Description>DENTAL TECHNICIAN</Description>
+  </Code>
+  <Code value="056660">
+    <Description>DENTAL TECHNICIAN TRAINEE</Description>
+  </Code>
+  <Code value="10012">
+    <Description>DENTAL TECHNICIAN TUTOR</Description>
+  </Code>
+  <Code value="056666">
+    <Description>DENTAL THERAPIST</Description>
+  </Code>
+  <Code value="056670">
+    <Description>DENTAL THERAPIST TRAINEE</Description>
+  </Code>
+  <Code value="300022">
+    <Description>DENTAL THERAPY TUTOR</Description>
+  </Code>
+  <Code value="123698">
+    <Description>DEPUTY CHIEF PATHOLOGIST</Description>
+  </Code>
+  <Code value="70">
+    <Description>DEPUTY DIRECTOR ADMINSTRATION</Description>
+  </Code>
+  <Code value="047938">
+    <Description>DEPUTY DIRECTOR BLAIR RESEARCH</Description>
+  </Code>
+  <Code value="86">
+    <Description>DEPUTY DIRECTOR COMMUNITY NURSING</Description>
+  </Code>
+  <Code value="0002">
+    <Description>DEPUTY DIRECTOR CONDITIONS OF SERVICE</Description>
+  </Code>
+  <Code value="048060">
+    <Description>DEPUTY DIRECTOR DISEASE PREVENTION CONTROL</Description>
+  </Code>
+  <Code value="56565">
+    <Description>DEPUTY DIRECTOR GOVERNMENT ANALYST/ADMIN,TOXI, CLINICAL</Description>
+  </Code>
+  <Code value="22255">
+    <Description>DEPUTY DIRECTOR GOVERNMENT ANALYST/FOOD CONTROL</Description>
+  </Code>
+  <Code value="49">
+    <Description>DEPUTY DIRECTOR HOSPITAL PLANNING AND PROJECT MANAGEMENT</Description>
+  </Code>
+  <Code value="60">
+    <Description>DEPUTY DIRECTOR HUMAN RESOURCES</Description>
+  </Code>
+  <Code value="0003">
+    <Description>DEPUTY DIRECTOR LEGAL AFFAIRS</Description>
+  </Code>
+  <Code value="0005">
+    <Description>DEPUTY DIRECTOR MANPOWER PLANNING AND DEVELOPMENT</Description>
+  </Code>
+  <Code value="0">
+    <Description>DEPUTY DIRECTOR NON COMMUNICABLE DISEASES</Description>
+  </Code>
+  <Code value="00">
+    <Description>DEPUTY DIRECTOR NON COMMUNICABLE DISEASES</Description>
+  </Code>
+  <Code value="18">
+    <Description>DEPUTY DIRECTOR NURSE TRAINING AND ADMINISTRATION</Description>
+  </Code>
+  <Code value="29">
+    <Description>DEPUTY DIRECTOR NUTRITION</Description>
+  </Code>
+  <Code value="56">
+    <Description>DEPUTY DIRECTOR POLICY AND PLANNING</Description>
+  </Code>
+  <Code value="79">
+    <Description>DEPUTY DIRECTOR STI, HIV AND AIDS</Description>
+  </Code>
+  <Code value="80">
+    <Description>DEPUTY DIRECTOR TB CONTROL</Description>
+  </Code>
+  <Code value="048032">
+    <Description>DEPUTY GOVERNMENT ANALYST</Description>
+  </Code>
+  <Code value="80001">
+    <Description>DEPUTY MINISTER</Description>
+  </Code>
+  <Code value="55588">
+    <Description>DIETICIAN</Description>
+  </Code>
+  <Code value="300015">
+    <Description>DIRECTOR BLAIR RESEARCH</Description>
+  </Code>
+  <Code value="0004">
+    <Description>DIRECTOR CONDITIONS OF SERVICE AND PUBLIC RELATIONS</Description>
+  </Code>
+  <Code value="06">
+    <Description>DIRECTOR ENVIRONMENTAL HEALTH</Description>
+  </Code>
+  <Code value="07">
+    <Description>DIRECTOR EPIDEMIOLOGY AND DISEASE CONTROL</Description>
+  </Code>
+  <Code value="08">
+    <Description>DIRECTOR FAMILY HEALTH</Description>
+  </Code>
+  <Code value="09">
+    <Description>DIRECTOR FINANCE AND ADMINSTRATION</Description>
+  </Code>
+  <Code value="22233">
+    <Description>DIRECTOR GOVERNMENT ANALYST</Description>
+  </Code>
+  <Code value="10">
+    <Description>DIRECTOR HIV, AIDS, STI AND TB</Description>
+  </Code>
+  <Code value="11">
+    <Description>DIRECTOR HUMAN RESOURCES</Description>
+  </Code>
+  <Code value="87">
+    <Description>DIRECTOR LABORATORY SERVICES</Description>
+  </Code>
+  <Code value="12">
+    <Description>DIRECTOR NURSING SERVICES</Description>
+  </Code>
+  <Code value="019844">
+    <Description>DIRECTOR OF CLINICAL SERVICES</Description>
+  </Code>
+  <Code value="047937">
+    <Description>DIRECTOR OF FINANCE</Description>
+  </Code>
+  <Code value="0589417">
+    <Description>DIRECTOR OF OPERATIONS</Description>
+  </Code>
+  <Code value="048074">
+    <Description>DIRECTOR ORAL HEALTH SERVICES</Description>
+  </Code>
+  <Code value="13">
+    <Description>DIRECTOR PERFORMANCE MANAGEMENT</Description>
+  </Code>
+  <Code value="14">
+    <Description>DIRECTOR PHARMACY SERVICES</Description>
+  </Code>
+  <Code value="15">
+    <Description>DIRECTOR POLICY AND PLANNING</Description>
+  </Code>
+  <Code value="16">
+    <Description>DIRECTOR QUALITY ASSURANCE</Description>
+  </Code>
+  <Code value="048287">
+    <Description>DIRECTOR TECHNICAL SUPPORT</Description>
+  </Code>
+  <Code value="17">
+    <Description>DIRECTOR TRADITIONAL MEDICINE</Description>
+  </Code>
+  <Code value="01245">
+    <Description>DIRECTOR TRAINING SERVICES</Description>
+  </Code>
+  <Code value="122360">
+    <Description>DISPENSARY ASSISTANT</Description>
+  </Code>
+  <Code value="300031">
+    <Description>DISTRICT ENVIRONMENTAL HEALTH OFFICER</Description>
+  </Code>
+  <Code value="047998">
+    <Description>DISTRICT MEDICAL OFFICER</Description>
+  </Code>
+  <Code value="1200">
+    <Description>DISTRICT NURSING OFFICER</Description>
+  </Code>
+  <Code value="056680">
+    <Description>DOMESTIC SERVICES MANAGER</Description>
+  </Code>
+  <Code value="126304">
+    <Description>DRIVER</Description>
+  </Code>
+  <Code value="1114">
+    <Description>DUPLICATION OPERATOR/SENIOER</Description>
+  </Code>
+  <Code value="073801">
+    <Description>EEG/ECG TECHNICIAN</Description>
+  </Code>
+  <Code value="073821">
+    <Description>EEG/ECG TECHNICIAN TRAINEE</Description>
+  </Code>
+  <Code value="0112569">
+    <Description>ELECTRICIAN</Description>
+  </Code>
+  <Code value="12345">
+    <Description>EMERGENCY PREPAREDNESS MANAGER</Description>
+  </Code>
+  <Code value="067875">
+    <Description>ENVIRONMENTAL HEALTH OFFICER</Description>
+  </Code>
+  <Code value="067912">
+    <Description>ENVIRONMENTAL HEALTH OFFICER TRAINEE</Description>
+  </Code>
+  <Code value="100000">
+    <Description>ENVIRONMENTAL HEALTH TECHNICIAN</Description>
+  </Code>
+  <Code value="20202">
+    <Description>ENVIRONMENTAL TECHNCIAN</Description>
+  </Code>
+  <Code value="300019">
+    <Description>EXECUTIVE ASSISTANT/SENIOR/PRINCIPAL</Description>
+  </Code>
+  <Code value="0001">
+    <Description>EXECUTIVE DIRECTOR</Description>
+  </Code>
+  <Code value="041099">
+    <Description>EXECUTIVE OFFICER</Description>
+  </Code>
+  <Code value="3036">
+    <Description>EXECUTIVE OFFICER OF HEALTH</Description>
+  </Code>
+  <Code value="0013">
+    <Description>EXECUTIVE SECRETARY</Description>
+  </Code>
+  <Code value="9001">
+    <Description>EXPANDED PROGRAM FOR IMMUNISATION OFFICER</Description>
+  </Code>
+  <Code value="52">
+    <Description>FACILITIES PLANNING ADMINISTRATIVE OFFICER SENIOR/PRINCIPAL</Description>
+  </Code>
+  <Code value="064743">
+    <Description>FARM MANAGER II</Description>
+  </Code>
+  <Code value="056744">
+    <Description>FIELD OFFICE SENIOR</Description>
+  </Code>
+  <Code value="135752">
+    <Description>FIELD ORDERLY</Description>
+  </Code>
+  <Code value="122600">
+    <Description>FIELD SUPERVISOR</Description>
+  </Code>
+  <Code value="20">
+    <Description>FOOD SAFETY AND PORT HEALTH COORDINATOR</Description>
+  </Code>
+  <Code value="014784">
+    <Description>GARDENER</Description>
+  </Code>
+  <Code value="133200">
+    <Description>GENERAL HAND</Description>
+  </Code>
+  <Code value="69">
+    <Description>GIS TECHNICIAN</Description>
+  </Code>
+  <Code value="048028">
+    <Description>GOVERNMENT ANALYST</Description>
+  </Code>
+  <Code value="048062">
+    <Description>GOVERNMENT DENTAL OFFICER</Description>
+  </Code>
+  <Code value="048000">
+    <Description>GOVERNMENT MEDICAL OFFICER</Description>
+  </Code>
+  <Code value="42">
+    <Description>GRAPHIC ARTIST</Description>
+  </Code>
+  <Code value="027024">
+    <Description>GROUNDS MAN ASSISTANT</Description>
+  </Code>
+  <Code value="0015">
+    <Description>GROUNDSMAN</Description>
+  </Code>
+  <Code value="111713">
+    <Description>HAND MAN</Description>
+  </Code>
+  <Code value="048152">
+    <Description>HARDWARE MAINTENANCE MANAGER</Description>
+  </Code>
+  <Code value="110200">
+    <Description>HEAD / CHEF</Description>
+  </Code>
+  <Code value="43">
+    <Description>HEALTH INFORMATION AND SURVEILLANCE COORDINATOR</Description>
+  </Code>
+  <Code value="073786">
+    <Description>HEALTH INFORMATION ASSISTANT</Description>
+  </Code>
+  <Code value="46">
+    <Description>HEALTH INFORMATION MANAGER</Description>
+  </Code>
+  <Code value="073906">
+    <Description>HEALTH INFORMATION OFFICER</Description>
+  </Code>
+  <Code value="138181">
+    <Description>HEALTH ORDERLY</Description>
+  </Code>
+  <Code value="40">
+    <Description>HEALTH PROMOTION COORDINATOR</Description>
+  </Code>
+  <Code value="41">
+    <Description>HEALTH PROMOTION MANAGER</Description>
+  </Code>
+  <Code value="073908">
+    <Description>HEALTH PROMOTION OFFICER</Description>
+  </Code>
+  <Code value="000009">
+    <Description>HEALTH SERVICES ADMINISTRATOR</Description>
+  </Code>
+  <Code value="47">
+    <Description>HEALTH SURVEILLANCE OFFICER</Description>
+  </Code>
+  <Code value="300003">
+    <Description>HEALTH TRAINING OFFICER</Description>
+  </Code>
+  <Code value="45">
+    <Description>HIV AND AIDS STI AND TB SURVEILLANCE</Description>
+  </Code>
+  <Code value="885623">
+    <Description>HOME WARDEN</Description>
+  </Code>
+  <Code value="0147366">
+    <Description>HOSPITAL CLAIMS ASSESOR</Description>
+  </Code>
+  <Code value="9050">
+    <Description>HOSPITAL ENGINEER</Description>
+  </Code>
+  <Code value="014586">
+    <Description>HOSPITAL EQUIPMENT ENGINEER</Description>
+  </Code>
+  <Code value="50">
+    <Description>HOSPITAL EQUIPMENT MANAGER</Description>
+  </Code>
+  <Code value="128700">
+    <Description>HOSPITAL EQUIPMENT REPAIRER</Description>
+  </Code>
+  <Code value="067994">
+    <Description>HOSPITAL EQUIPMENT TECHINICIAN /SENIOR/HIGHER</Description>
+  </Code>
+  <Code value="11117">
+    <Description>HOSPITAL EQUIPMENT TECHNICIAN ASSISTANT CHIEF</Description>
+  </Code>
+  <Code value="074896">
+    <Description>HOSPITAL FOOD SERVICES SUPERVISOR</Description>
+  </Code>
+  <Code value="133202">
+    <Description>HOSPITAL HAND</Description>
+  </Code>
+  <Code value="048156">
+    <Description>HOSPITAL MEDICAL OFFICER</Description>
+  </Code>
+  <Code value="51">
+    <Description>HOSPITAL PLANNING MANAGER(ENGINEER)</Description>
+  </Code>
+  <Code value="133230">
+    <Description>HOSPITAL SECURITY GUARD</Description>
+  </Code>
+  <Code value="128">
+    <Description>HOSTEL WARDEN</Description>
+  </Code>
+  <Code value="112982">
+    <Description>HOUSE KEEPER</Description>
+  </Code>
+  <Code value="039729">
+    <Description>HUMAN RESOURCES ASSISTANT</Description>
+  </Code>
+  <Code value="041511">
+    <Description>HUMAN RESOURCES OFFICER</Description>
+  </Code>
+  <Code value="62">
+    <Description>HUMAN RESOURCES OFFICER SENIOR/PRINCIPAL</Description>
+  </Code>
+  <Code value="0009">
+    <Description>INFOMATION OFFICER</Description>
+  </Code>
+  <Code value="0008">
+    <Description>INFORMATION OFFICER</Description>
+  </Code>
+  <Code value="67">
+    <Description>INFORMATION TECHNOLOGY COORDINATOR</Description>
+  </Code>
+  <Code value="53">
+    <Description>INFRASTRUCTURE MAINTENANCE OFFICER(ADMINISTRATIVE OFFICER)</Description>
+  </Code>
+  <Code value="112832">
+    <Description>INSTITUTIONAL DOMESTIC SUPERVISOR</Description>
+  </Code>
+  <Code value="073792">
+    <Description>INTERGRATED MANAGEMENT OF CHILD ILLNESS OFFICER</Description>
+  </Code>
+  <Code value="1116">
+    <Description>INTERGRATED MANAGEMENT OF CHILDHOOD ILLNESS MANAGER</Description>
+  </Code>
+  <Code value="046982">
+    <Description>INTERNAL AUDITOR</Description>
+  </Code>
+  <Code value="048482">
+    <Description>JUNIOR REGISTRAR</Description>
+  </Code>
+  <Code value="014785">
+    <Description>JUNIOR RESIDENT MEDICAL OFFICER</Description>
+  </Code>
+  <Code value="125023">
+    <Description>LABORATORY HAND</Description>
+  </Code>
+  <Code value="138403">
+    <Description>LABORATORY HAND 11</Description>
+  </Code>
+  <Code value="129572">
+    <Description>LABORATORY HANDY SENIOR</Description>
+  </Code>
+  <Code value="114300">
+    <Description>LADY WARDEN</Description>
+  </Code>
+  <Code value="131300">
+    <Description>LAUNDRY HAND</Description>
+  </Code>
+  <Code value="119500">
+    <Description>LAUNDRY MANAGER</Description>
+  </Code>
+  <Code value="113960">
+    <Description>LAUNDRY SUPERINTENDEND ASSISTANT</Description>
+  </Code>
+  <Code value="116850">
+    <Description>LAUNDRY SUPERITENTENDENT 1</Description>
+  </Code>
+  <Code value="57">
+    <Description>LEGISLATION OFFICER SENIOR/PRINCIPAL</Description>
+  </Code>
+  <Code value="126750">
+    <Description>LEPROSY SCOUT</Description>
+  </Code>
+  <Code value="045941">
+    <Description>LIBRARIAN (DIPLOMA)</Description>
+  </Code>
+  <Code value="64">
+    <Description>LIBRARIAN SENIOR/PRINCIPAL</Description>
+  </Code>
+  <Code value="120950">
+    <Description>LINEN CHECKER</Description>
+  </Code>
+  <Code value="741996">
+    <Description>LINEN CHEKER</Description>
+  </Code>
+  <Code value="985623">
+    <Description>LINEN CONTROLLER I/II</Description>
+  </Code>
+  <Code value="114320">
+    <Description>LINEN ROOM CONTROLLER 2</Description>
+  </Code>
+  <Code value="110650">
+    <Description>LINEN SUPERVISOR</Description>
+  </Code>
+  <Code value="71">
+    <Description>LOGISTICS AND ADMINSTRATION OFFICER</Description>
+  </Code>
+  <Code value="85">
+    <Description>LOGISTICS TB MANAGER</Description>
+  </Code>
+  <Code value="0012">
+    <Description>MACHINE OPERATOR</Description>
+  </Code>
+  <Code value="064589">
+    <Description>MAINTENANCE OFFICER</Description>
+  </Code>
+  <Code value="073753">
+    <Description>MANAGER ( EPI)</Description>
+  </Code>
+  <Code value="7489256">
+    <Description>MANAGER INTERNAL AUDIT</Description>
+  </Code>
+  <Code value="073973">
+    <Description>MATRON 111 ( THEATRE/ANAESTHETICS)</Description>
+  </Code>
+  <Code value="256123">
+    <Description>MATRON II</Description>
+  </Code>
+  <Code value="025689">
+    <Description>MATRON III</Description>
+  </Code>
+  <Code value="01110">
+    <Description>MAXILLO FACIAL SURGEON</Description>
+  </Code>
+  <Code value="073736">
+    <Description>MEDICAL HEALTH SERVICES COORDINATOR</Description>
+  </Code>
+  <Code value="035704">
+    <Description>MEDICAL LABORATORY ASSISTANT</Description>
+  </Code>
+  <Code value="023578">
+    <Description>MEDICAL LABORATORY SCIENTIST/ SENIOR/ PRINCIPAL</Description>
+  </Code>
+  <Code value="068208">
+    <Description>MEDICAL LABORATORY SCIENTIST/ TECHNICIAN</Description>
+  </Code>
+  <Code value="12120">
+    <Description>MEDICAL LABORATORY TECHNCIAN</Description>
+  </Code>
+  <Code value="068080">
+    <Description>MEDICAL LABORATORY TECHNOLOGIST ( GRADUATE)</Description>
+  </Code>
+  <Code value="068070">
+    <Description>MEDICAL LABORATORY TECHNOLOGIST/SENIOR/PRINCIPAL</Description>
+  </Code>
+  <Code value="048284">
+    <Description>MEDICAL OFFICER OF HEALTH</Description>
+  </Code>
+  <Code value="1111111">
+    <Description>MEDICAL OFFICER OF HEALTH (EPID-DISEASE CONTROL)</Description>
+  </Code>
+  <Code value="111112">
+    <Description>MEDICAL OFFICER OF HEALTH (MATERNAL &amp; CHILD HEALTH)</Description>
+  </Code>
+  <Code value="048301">
+    <Description>MEDICAL PYSCHIATRIC SOCIAL WORKER</Description>
+  </Code>
+  <Code value="056826">
+    <Description>MEDICAL RECORDS OFFICER</Description>
+  </Code>
+  <Code value="056880">
+    <Description>MEDICAL RECORDS OFFICER ASSISTANT</Description>
+  </Code>
+  <Code value="048318">
+    <Description>MEDICAL RESEARCH OFFICER</Description>
+  </Code>
+  <Code value="056830">
+    <Description>MEDICAL RESEARCH OFFICER ASSISTANT</Description>
+  </Code>
+  <Code value="073410">
+    <Description>MEDICAL SECRETARY</Description>
+  </Code>
+  <Code value="369521">
+    <Description>MEDICAL SOCIAL WORKER</Description>
+  </Code>
+  <Code value="048131">
+    <Description>MEDICAL SPECIALIST</Description>
+  </Code>
+  <Code value="048132">
+    <Description>MEDICAL SUP II-MEDICAL SPECIALIST PERSONAL</Description>
+  </Code>
+  <Code value="048352">
+    <Description>MEDICAL SUPERINTENDENT</Description>
+  </Code>
+  <Code value="018348">
+    <Description>MEDICAL SUPERITENDENT II</Description>
+  </Code>
+  <Code value="77">
+    <Description>MENTAL HEALTH DEPUTY DIRECTOR</Description>
+  </Code>
+  <Code value="78">
+    <Description>MENTAL HEALTH SERVICES MANAGER</Description>
+  </Code>
+  <Code value="36">
+    <Description>MICROBIOLOGY REFERENCE LABORATORY SERVICES COORDINATOR</Description>
+  </Code>
+  <Code value="004750">
+    <Description>MICROSCOPIST</Description>
+  </Code>
+  <Code value="80002">
+    <Description>MINISTER</Description>
+  </Code>
+  <Code value="026971">
+    <Description>MINISTER'S DRIVER</Description>
+  </Code>
+  <Code value="125150">
+    <Description>MORTUARY ATTENDANT 1</Description>
+  </Code>
+  <Code value="121025">
+    <Description>MORTUARY ATTENDANT 11</Description>
+  </Code>
+  <Code value="136450">
+    <Description>MORTUARY ATTENDANT 111</Description>
+  </Code>
+  <Code value="693258">
+    <Description>MORTUARY HANDS</Description>
+  </Code>
+  <Code value="116052">
+    <Description>MORTUARY SUPERVISOR</Description>
+  </Code>
+  <Code value="073763">
+    <Description>NON COMMUNICABLE DISEASE CONTROL OFFICER</Description>
+  </Code>
+  <Code value="138550">
+    <Description>NURSE AID</Description>
+  </Code>
+  <Code value="012296">
+    <Description>NURSE AIDE</Description>
+  </Code>
+  <Code value="074416">
+    <Description>NURSING TUTOR/SENIOR/PRINCIPAL</Description>
+  </Code>
+  <Code value="31">
+    <Description>NUTRITION EMERGENCY PREPAREDNESS AND SURVEILLANCE MANAGER</Description>
+  </Code>
+  <Code value="30">
+    <Description>NUTRITION INTERVENTION MANAGER</Description>
+  </Code>
+  <Code value="073764">
+    <Description>NUTRITION INTERVENTION OFFICER</Description>
+  </Code>
+  <Code value="33">
+    <Description>NUTRITION LOGISTICS OFFICER</Description>
+  </Code>
+  <Code value="044444">
+    <Description>NUTRITIONIST</Description>
+  </Code>
+  <Code value="32">
+    <Description>NUTRITIONIST SENIOR/PRINCIPAL (TRAINING OFFICER)</Description>
+  </Code>
+  <Code value="75">
+    <Description>OCCUPATIONAL HEALTH AND INJURY COORDINATOR</Description>
+  </Code>
+  <Code value="76">
+    <Description>OCCUPATIONAL HEALTH AND INJURY MANAGER</Description>
+  </Code>
+  <Code value="115700">
+    <Description>OCCUPATIONAL THERAPIST</Description>
+  </Code>
+  <Code value="1111">
+    <Description>OCCUPATIONAL THERAPY TRAINER</Description>
+  </Code>
+  <Code value="525236">
+    <Description>OFFICE ORDERLIES</Description>
+  </Code>
+  <Code value="131752">
+    <Description>OFFICE ORDERLY</Description>
+  </Code>
+  <Code value="8000">
+    <Description>OPERATIONS MANAGER</Description>
+  </Code>
+  <Code value="111880">
+    <Description>ORDERLY STEWARD 11</Description>
+  </Code>
+  <Code value="138600">
+    <Description>ORTHOPAEDIC ASSISTANT 11</Description>
+  </Code>
+  <Code value="669852">
+    <Description>ORTHOPAEDIC ASSISTANT FITTER/ SEC</Description>
+  </Code>
+  <Code value="9000">
+    <Description>ORTHOPAEDIC TECHNOLOGIST</Description>
+  </Code>
+  <Code value="102589">
+    <Description>ORTHOPAEDIC TECHNOLOGIST ASSISTANT CHIEF</Description>
+  </Code>
+  <Code value="056896">
+    <Description>ORTHOPAEDIC TECHNOLOGIST- (DIPLOMA)</Description>
+  </Code>
+  <Code value="300007">
+    <Description>ORTHOPEADIC ASSISTANT</Description>
+  </Code>
+  <Code value="113300">
+    <Description>PACKER,CSSD,SENIOR</Description>
+  </Code>
+  <Code value="069852">
+    <Description>PAINTER</Description>
+  </Code>
+  <Code value="036958">
+    <Description>PARALEGAL CLERK</Description>
+  </Code>
+  <Code value="077560">
+    <Description>PATHOLOGIST</Description>
+  </Code>
+  <Code value="056697">
+    <Description>PC TECHNICIAN</Description>
+  </Code>
+  <Code value="55">
+    <Description>PERFORMANCE MONITORING AND EVALUATION</Description>
+  </Code>
+  <Code value="135">
+    <Description>PERSONAL ASSISTANT TO MINISTER</Description>
+  </Code>
+  <Code value="069780">
+    <Description>PHARMACEUTICAL TECHNICIAN</Description>
+  </Code>
+  <Code value="069788">
+    <Description>PHARMACEUTICAL TECHNICIAN TRAINEE</Description>
+  </Code>
+  <Code value="048393">
+    <Description>PHARMACIST</Description>
+  </Code>
+  <Code value="26">
+    <Description>PHARMACIST SENIOR/PRINCIPAL (TRAINING OFFICER)</Description>
+  </Code>
+  <Code value="27">
+    <Description>PHARMACY CADET</Description>
+  </Code>
+  <Code value="24">
+    <Description>PHARMACY LOGISTICS AND RESEARCH COORDINATOR</Description>
+  </Code>
+  <Code value="25">
+    <Description>PHARMACY LOGISTICS AND RESEARCH OFFICER</Description>
+  </Code>
+  <Code value="789625">
+    <Description>PHARMACY STORES CONTROLLER</Description>
+  </Code>
+  <Code value="014588">
+    <Description>PHARMACY TECHNICIAN</Description>
+  </Code>
+  <Code value="045189">
+    <Description>PHYSICIST /SENIOR/PRINCIPAL</Description>
+  </Code>
+  <Code value="048440">
+    <Description>PHYSICIST/ CHIEF</Description>
+  </Code>
+  <Code value="073515">
+    <Description>PHYSIOTHERAPIST</Description>
+  </Code>
+  <Code value="300024">
+    <Description>PHYSIOTHERAPY /OCCUPATIONAL/TUTOR/SENIOR/PRINCIPAL</Description>
+  </Code>
+  <Code value="59">
+    <Description>PLANNING AND DONOR COORDINATION OFFICER SENIOR PRINCIPAL</Description>
+  </Code>
+  <Code value="014598">
+    <Description>PLUMBER</Description>
+  </Code>
+  <Code value="045896">
+    <Description>PMTCT MANAGER</Description>
+  </Code>
+  <Code value="22">
+    <Description>PORT HEALTH MANAGER/FOOD SAFETY MANAGER</Description>
+  </Code>
+  <Code value="000003">
+    <Description>PORT HEALTH OFFICER</Description>
+  </Code>
+  <Code value="000008">
+    <Description>PORT HEALTH TECHNICIAN</Description>
+  </Code>
+  <Code value="074122">
+    <Description>PRIMARY HEALTH CARE NURSE</Description>
+  </Code>
+  <Code value="789045">
+    <Description>PRIMARY HEALTH CARE WORKER TRAINER</Description>
+  </Code>
+  <Code value="02">
+    <Description>PRINCIPAL DIRECTOR CURATIVE</Description>
+  </Code>
+  <Code value="04">
+    <Description>PRINCIPAL DIRECTOR PLANNING AND EVALUATION</Description>
+  </Code>
+  <Code value="03">
+    <Description>PRINCIPAL DIRECTOR PREVENTIVE</Description>
+  </Code>
+  <Code value="111122">
+    <Description>PRINCIPAL ENVIRONMENTAL HEALTH OFFICER (DIPLOMA)</Description>
+  </Code>
+  <Code value="073864">
+    <Description>PRINCIPAL ENVIRONMENTAL HEALTH TECHINICIAN</Description>
+  </Code>
+  <Code value="63">
+    <Description>PRINCIPAL EXECUTIVE ASSISTANT</Description>
+  </Code>
+  <Code value="300018">
+    <Description>PRINCIPAL MEDICAL RESEARCH OFFICER</Description>
+  </Code>
+  <Code value="074376">
+    <Description>PRINCIPAL NURSING OFFICER</Description>
+  </Code>
+  <Code value="074488">
+    <Description>PRINCIPAL PHYSIOTHERAPIST</Description>
+  </Code>
+  <Code value="074025">
+    <Description>PRINCIPAL STATE CERTIFIED NURSE</Description>
+  </Code>
+  <Code value="074410">
+    <Description>PRINCIPAL TUTOR</Description>
+  </Code>
+  <Code value="012385">
+    <Description>PRINCIPAL TUTOR RADIOGRAPHY</Description>
+  </Code>
+  <Code value="039722">
+    <Description>PRIVATE SECRETARY 1</Description>
+  </Code>
+  <Code value="137">
+    <Description>PROCUREMENT OFFICER</Description>
+  </Code>
+  <Code value="111124">
+    <Description>PROVINCIAL CHILD CARE OFFICER</Description>
+  </Code>
+  <Code value="111119">
+    <Description>PROVINCIAL ENVIRONMENTAL HEALTH OFFICER</Description>
+  </Code>
+  <Code value="300008">
+    <Description>PROVINCIAL EPI OFFICER</Description>
+  </Code>
+  <Code value="300009">
+    <Description>PROVINCIAL EPIDEMIOLOGY/DISEASE CONTROL OFFICER</Description>
+  </Code>
+  <Code value="111117">
+    <Description>PROVINCIAL HEALTH INFORMATION ASSISTANT</Description>
+  </Code>
+  <Code value="111115">
+    <Description>PROVINCIAL HEALTH INFORMATION OFFICER</Description>
+  </Code>
+  <Code value="300010">
+    <Description>PROVINCIAL HEALTH PROMOTION OFFICER</Description>
+  </Code>
+  <Code value="111126">
+    <Description>PROVINCIAL HEALTH SERVICES ADMINISTRATOR</Description>
+  </Code>
+  <Code value="1111113">
+    <Description>PROVINCIAL HIV /AIDS/STI/TB OFFICER</Description>
+  </Code>
+  <Code value="1111114">
+    <Description>PROVINCIAL MALARIA /EPIDEMIC DISEASES CONTROL OFFICER</Description>
+  </Code>
+  <Code value="048288">
+    <Description>PROVINCIAL MEDICAL DIRECTOR</Description>
+  </Code>
+  <Code value="111120">
+    <Description>PROVINCIAL NURSING OFFICER</Description>
+  </Code>
+  <Code value="111118">
+    <Description>PROVINCIAL NUTRITIONIST</Description>
+  </Code>
+  <Code value="111116">
+    <Description>PROVINCIAL PHARMACIST</Description>
+  </Code>
+  <Code value="111123">
+    <Description>PROVINCIAL PRIMARY CARE OFFICER</Description>
+  </Code>
+  <Code value="111129">
+    <Description>PROVINCIAL TB COORDINATOR</Description>
+  </Code>
+  <Code value="8001">
+    <Description>PROVINCIAL THERAPIST</Description>
+  </Code>
+  <Code value="111125">
+    <Description>PROVINCILA CHILD WELFARE OFFICER</Description>
+  </Code>
+  <Code value="90020">
+    <Description>PSYCHIATRIC TRAINEE</Description>
+  </Code>
+  <Code value="073930">
+    <Description>PUBLIC RELATIONS OFFICER</Description>
+  </Code>
+  <Code value="0987410">
+    <Description>QUALITY ASSURANCE OFFICER</Description>
+  </Code>
+  <Code value="54">
+    <Description>QUALITY ASSURANCE COORDINATOR</Description>
+  </Code>
+  <Code value="100">
+    <Description>RADIATION PROTECTION OFFICER/SENIOR</Description>
+  </Code>
+  <Code value="067460">
+    <Description>RADIOGRAPHER</Description>
+  </Code>
+  <Code value="073770">
+    <Description>RAPID DISEASE EPI SURVELLIANCE MANAGER</Description>
+  </Code>
+  <Code value="0014">
+    <Description>RECEPTIONIST</Description>
+  </Code>
+  <Code value="100536">
+    <Description>RECORDS AND INFORMATION SUPERVISOR</Description>
+  </Code>
+  <Code value="039644">
+    <Description>RECORDS AND INFOR ASSISTANT</Description>
+  </Code>
+  <Code value="039651">
+    <Description>RECORDS AND INFOR ASSISTANT - DIPLOMA</Description>
+  </Code>
+  <Code value="669810">
+    <Description>RECORDS AND INFORMATION ASSISTANT</Description>
+  </Code>
+  <Code value="039647">
+    <Description>RECORDS AND INFORMATION SUPERVISOR (DIPLOMA)</Description>
+  </Code>
+  <Code value="014723">
+    <Description>REGISTERED GENERAL NURSE /SENIOR</Description>
+  </Code>
+  <Code value="014790">
+    <Description>REGISTRARS SNR/JNR</Description>
+  </Code>
+  <Code value="014258">
+    <Description>REGISTRY CLASSIFIER / CLERK</Description>
+  </Code>
+  <Code value="039643">
+    <Description>REGISTRY CLERK/CLASSIFIER</Description>
+  </Code>
+  <Code value="039645">
+    <Description>REGISTRY SUPERVISOR</Description>
+  </Code>
+  <Code value="074018">
+    <Description>REHAB TECHNICIAN/ SENIOR</Description>
+  </Code>
+  <Code value="300026">
+    <Description>REHABILITATION TECH TUTOR</Description>
+  </Code>
+  <Code value="132300">
+    <Description>REHABILITATION ASSISTANT TRAINEE</Description>
+  </Code>
+  <Code value="073747">
+    <Description>REPRODUCTIVE HEALTH COORDINATOR</Description>
+  </Code>
+  <Code value="74">
+    <Description>REPRODUCTIVE HEALTH SERVICES MANAGER</Description>
+  </Code>
+  <Code value="21210">
+    <Description>SCIENTIFIC LABORATORY TECHNCIAN</Description>
+  </Code>
+  <Code value="068195">
+    <Description>SCIENTIFIC LABORATORY TECHNICIAN</Description>
+  </Code>
+  <Code value="068212">
+    <Description>SCIENTIFIC LABORATORY TECHNICIAN TRAINEE</Description>
+  </Code>
+  <Code value="035631">
+    <Description>SCN</Description>
+  </Code>
+  <Code value="129300">
+    <Description>SEAMSTRESS</Description>
+  </Code>
+  <Code value="01">
+    <Description>SECRETARY FOR HEALTH AND CHILD WELFARE</Description>
+  </Code>
+  <Code value="134203">
+    <Description>SECURITY GUARD</Description>
+  </Code>
+  <Code value="014963">
+    <Description>SECURITY OFFICER</Description>
+  </Code>
+  <Code value="035566">
+    <Description>SENIOR AMBULANCE DRIVER</Description>
+  </Code>
+  <Code value="073658">
+    <Description>SENIOR CLINICAL NURSING OFFICER</Description>
+  </Code>
+  <Code value="044558">
+    <Description>SENIOR CRECHE SUPERVISOR</Description>
+  </Code>
+  <Code value="039725">
+    <Description>SENIOR EXECUTIVE ASSISTANT (PRIVATE SECRETARY 1 HND)</Description>
+  </Code>
+  <Code value="039714">
+    <Description>SENIOR EXECUTIVE ASSISTANT (TYPING SUPERVISOR DIPLOMA)</Description>
+  </Code>
+  <Code value="300021">
+    <Description>SENIOR FIELD ORDERLY</Description>
+  </Code>
+  <Code value="129400">
+    <Description>SENIOR FIELD SUPERVISOR</Description>
+  </Code>
+  <Code value="048070">
+    <Description>SENIOR GOVERNMENT DENTAL OFFICER</Description>
+  </Code>
+  <Code value="137103">
+    <Description>SENIOR HAND</Description>
+  </Code>
+  <Code value="048157">
+    <Description>SENIOR HOUSE OFFICER</Description>
+  </Code>
+  <Code value="036857">
+    <Description>SENIOR INSTRUCTOR RADIOGRAPHER</Description>
+  </Code>
+  <Code value="030028">
+    <Description>SENIOR LAUNDRY HAND</Description>
+  </Code>
+  <Code value="137172">
+    <Description>SENIOR OFFICE ORDERLY</Description>
+  </Code>
+  <Code value="048490">
+    <Description>SENIOR REGISTRAR</Description>
+  </Code>
+  <Code value="300025">
+    <Description>SENIOR REHABILITATION TECHNICIAN</Description>
+  </Code>
+  <Code value="088745">
+    <Description>SENIOR RESIDENT MEDICAL OFFICER</Description>
+  </Code>
+  <Code value="074606">
+    <Description>SENIOR SISTER</Description>
+  </Code>
+  <Code value="113471">
+    <Description>SENIOR STORES ASSISTANT</Description>
+  </Code>
+  <Code value="9985623">
+    <Description>SENIOR TUTOR RADIOGRAPHY</Description>
+  </Code>
+  <Code value="074589">
+    <Description>SENIOR WARD DOMESTIC SERVICES SUPERVISOR</Description>
+  </Code>
+  <Code value="137223">
+    <Description>SEWING ASSISTANT</Description>
+  </Code>
+  <Code value="137220">
+    <Description>SEWING ASSISTANT (PERSONAL TO HOLDER)</Description>
+  </Code>
+  <Code value="121300">
+    <Description>SEWING SUPERVISOR</Description>
+  </Code>
+  <Code value="058741">
+    <Description>SHOPFITTER</Description>
+  </Code>
+  <Code value="000006">
+    <Description>SISTER COMMUNITY</Description>
+  </Code>
+  <Code value="074613">
+    <Description>SISTER GENERAL GRADUATE / THEATRE ANAESTHETICS</Description>
+  </Code>
+  <Code value="074605">
+    <Description>SISTER GENERAL/ SENIOR</Description>
+  </Code>
+  <Code value="074635">
+    <Description>SISTER IN CHARGE</Description>
+  </Code>
+  <Code value="000005">
+    <Description>SISTER IN CHARGE COMMUNITY</Description>
+  </Code>
+  <Code value="074636">
+    <Description>SISTER IN CHARGE THEATRE ANAESTHETICS</Description>
+  </Code>
+  <Code value="047871">
+    <Description>SNR CLINICAL PSYCHOLOGIST</Description>
+  </Code>
+  <Code value="0006">
+    <Description>SNR/ PRINCIPAL CONDITIONS OF SERVICE OFFICER</Description>
+  </Code>
+  <Code value="0016">
+    <Description>SNR/PRIN LEGAL OFFICER</Description>
+  </Code>
+  <Code value="68">
+    <Description>SOFTWARE PROGRAMME ANALYST</Description>
+  </Code>
+  <Code value="025895">
+    <Description>SPECIALIST- HEAD OF DEPARTMENT</Description>
+  </Code>
+  <Code value="014789">
+    <Description>SPECIALISTS / CONSULTANT</Description>
+  </Code>
+  <Code value="074452">
+    <Description>SPEECH / OCCUPATIONAL THERAPIST</Description>
+  </Code>
+  <Code value="300005">
+    <Description>STATE CERTIFIED MEDICAL LABORATORY TECHNICIAN/SNR TRAINEE</Description>
+  </Code>
+  <Code value="0147893">
+    <Description>STATE CERTIFIED MEDICAL LABORATORY TRAINEE</Description>
+  </Code>
+  <Code value="014523">
+    <Description>STATE CERTIFIED NURSE</Description>
+  </Code>
+  <Code value="118400">
+    <Description>STEWARD /SECURITY</Description>
+  </Code>
+  <Code value="82">
+    <Description>STI, HIV AND AIDS PREVENION CARE MANAGER</Description>
+  </Code>
+  <Code value="073757">
+    <Description>STI/AIDS PREVENTION OFFICER</Description>
+  </Code>
+  <Code value="114763">
+    <Description>STOREMAN</Description>
+  </Code>
+  <Code value="111101">
+    <Description>STORES ASSISTANT 1</Description>
+  </Code>
+  <Code value="123662">
+    <Description>STORES ASSISTANT 11</Description>
+  </Code>
+  <Code value="139251">
+    <Description>STORES ASSISTANT 111</Description>
+  </Code>
+  <Code value="0147852">
+    <Description>STORES CONTROLLER( PHARMACY)</Description>
+  </Code>
+  <Code value="132102">
+    <Description>STORES HAND</Description>
+  </Code>
+  <Code value="060206">
+    <Description>STORES OFFICER 2</Description>
+  </Code>
+  <Code value="58">
+    <Description>STRATEGY AND POLICY DEVELOPMENT OFFICER SENIOR PRINCIPAL</Description>
+  </Code>
+  <Code value="074125">
+    <Description>STUDENT NURSE</Description>
+  </Code>
+  <Code value="0145896">
+    <Description>STUDENT RADIOGRAPHER</Description>
+  </Code>
+  <Code value="116081">
+    <Description>SUPERVISOR 1</Description>
+  </Code>
+  <Code value="137630">
+    <Description>SUPERVISOR ASSISTANT</Description>
+  </Code>
+  <Code value="116050">
+    <Description>SUPERVISOR(HEALTH)</Description>
+  </Code>
+  <Code value="48">
+    <Description>SURVEILLANCE ASSISTANT</Description>
+  </Code>
+  <Code value="44">
+    <Description>SURVEILLANCE MANAGER</Description>
+  </Code>
+  <Code value="0147693">
+    <Description>SWITCH BOARD SUPERVISOR</Description>
+  </Code>
+  <Code value="336651">
+    <Description>SYSTEMS ADMINISTRATOR</Description>
+  </Code>
+  <Code value="112261">
+    <Description>TAILOR 1/II</Description>
+  </Code>
+  <Code value="030023">
+    <Description>TAILOR ASST</Description>
+  </Code>
+  <Code value="84">
+    <Description>TB CONTROL MANAGER</Description>
+  </Code>
+  <Code value="9002">
+    <Description>TB COODINATOR</Description>
+  </Code>
+  <Code value="35">
+    <Description>TB REFERENCE LABORATORY SERVICES COORDINATOR</Description>
+  </Code>
+  <Code value="066583">
+    <Description>TECHNICAL ASSISTANT (LABORATORY)</Description>
+  </Code>
+  <Code value="121551">
+    <Description>TECHNICAL ASSISTANT 1</Description>
+  </Code>
+  <Code value="056698">
+    <Description>TECHNICIAN</Description>
+  </Code>
+  <Code value="113650">
+    <Description>THEATRE DISPOSAL SUPERVISOR</Description>
+  </Code>
+  <Code value="020001">
+    <Description>THEATRE HAND</Description>
+  </Code>
+  <Code value="001">
+    <Description>TO DELETE</Description>
+  </Code>
+  <Code value="38">
+    <Description>TRADITIONAL MEDICINE POLICY AND PRACTICE CONTROL COORDINATOR</Description>
+  </Code>
+  <Code value="39">
+    <Description>TRADITIONAL MEDICINE RESEARCH AND INFORMATION COORDINATOR</Description>
+  </Code>
+  <Code value="132250">
+    <Description>TRAINEE ENVERONMENTAL HEALTH TECHNICIAN</Description>
+  </Code>
+  <Code value="111127">
+    <Description>TRAINEE ENVIRONMENTAL HEALTH OFFICER</Description>
+  </Code>
+  <Code value="129700">
+    <Description>TRAINEE IDS</Description>
+  </Code>
+  <Code value="34">
+    <Description>TRAINEE INSTITUTIONAL DOMESTIC SUPERVISOR</Description>
+  </Code>
+  <Code value="068115">
+    <Description>TRAINEE MED/ VET LAB. TECHNOLOGIST(NON GRADUTE)</Description>
+  </Code>
+  <Code value="300020">
+    <Description>TRAINEE MIDWIVES</Description>
+  </Code>
+  <Code value="014725">
+    <Description>TRAINEE ORTHO TECHNICIAN</Description>
+  </Code>
+  <Code value="28">
+    <Description>TRAINEE PHARMACY TECHNICIAN</Description>
+  </Code>
+  <Code value="074127">
+    <Description>TRAINEE PRIMARY CARE NURSE</Description>
+  </Code>
+  <Code value="067456">
+    <Description>TRAINEE RADIOGRAPHER</Description>
+  </Code>
+  <Code value="137400">
+    <Description>TRAINEE STATE CERT. LAB. ASSISTANT</Description>
+  </Code>
+  <Code value="037513">
+    <Description>TYPIST/STENOGRAPHER</Description>
+  </Code>
+  <Code value="132421">
+    <Description>WAITER</Description>
+  </Code>
+  <Code value="114940">
+    <Description>WARD DOMESTIC SUPERVISOR</Description>
+  </Code>
+  <Code value="21">
+    <Description>WATER AND SANITATION MANAGER/WASTE MANAGER</Description>
+  </Code>
+  <Code value="19">
+    <Description>WATER SANITATION AND WASTE MANAGEMENT COORDINATOR</Description>
+  </Code>
+  <Code value="0147889">
+    <Description>WELDER</Description>
+  </Code>
+  <Code value="139752">
+    <Description>WORKSHOP HAND</Description>
+  </Code>
+  <Code value="000010">
+    <Description>X-RAY OPERATOR</Description>
+  </Code>
+  <Code value="139900">
+    <Description>XRAY ATTENDANT</Description>
+  </Code>
+  <Code value="121700">
+    <Description>XRAY OPERATOR TRAINEE</Description>
+  </Code>
+</CodeList>
