@@ -8,7 +8,7 @@ Some details on expected file/directory structure can be found here:
 To run the transform tools you can do something like:
     git clone ssh username@192.168.1.2/git-repositories/his-transform-tools/.git
     cd zimbabwe-sdmx-hd    
-    ../his-transform-tools/runme.php
+    php ../his-transform-tools/runme.php
 
 
 

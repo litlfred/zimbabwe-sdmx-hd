@@ -6,7 +6,7 @@ Some details on expected file/directory structure can be found here:
      http://open.intrahealth.org/mediawiki/SDMX-HD_Data_Export_--_Kenya
 
 To run the transform tools you can do something like:
-    git clone ssh username@192.168.1.2/git-repositories/his-transform-tools/.git
+    git clone ssh://username@192.168.1.2/git-repositories/his-transform-tools/.git
     cd zimbabwe-sdmx-hd    
     php ../his-transform-tools/runme.php
 
