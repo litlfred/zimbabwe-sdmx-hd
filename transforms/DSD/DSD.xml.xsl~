@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"> 
+  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/> 
+  <xsl:template match="/"> 
+
+    <Structure xmlns="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message" xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message ../schema/SDMXMessage.xsd    http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure ../schema/SDMXStructure.xsd">
+      <Header>
+	<ID>SDMX-HD-DSD</ID>
+	<Test>true</Test>
+	<Name xml:lang="en">SDMX Health Domain</Name>
+	<Prepared><xsl:value-of select="/Lists/@year"/>-<xsl:value-of select="/Lists/@month"/>-<xsl:value-of select="/Lists/@day"/></Prepared>
+	<Sender id="ZW_MOHCW">
+	  <Name>Zimbabwe MOHCW</Name>
+	  <Contact>
+	    <Name xml:lang="en"/>
+	    <Department/>
+	    <Telephone/>
+	    <Email/>
+	  </Contact>
+	</Sender>
+      </Header>
+      
+      <OrganisationSchemes>
+	<structure:OrganisationScheme id="ZIMBABWE_HIS" agencyID="HITRAC" version="1.0" isFinal="false">
+	  <structure:Name xml:lang="en">Zimbabwe HIS Organisations</structure:Name>
+	  <structure:Description xml:lang="en">Agencies working with Zimbabwe Health Information Systems</structure:Description>
+	  <structure:Agencies>
+	    <!--Agencies are responsible for the maintenance of
+		structures.-->
+	    <structure:Agency id="ZW_MOHCW" version="1.0">
+	      <structure:Name xml:lang="en">Zimbabwe Ministry of Health and Child Welfare</structure:Name>
+	      <structure:Description xml:lang="en">Zimbabwe Ministry of Health and Child Welfare</structure:Description>
+	    </structure:Agency>
+	  </structure:Agencies>	  
+	</structure:OrganisationScheme>
+      </OrganisationSchemes>
+
+
+      <CodeLists>
+	<!--Fixed/Outreach-->
+
+
+	<structure:CodeList id="CL_FREQ" agencyID="ZW_MOHCW" version="1.0" isFinal="false" urn="urn:sdmx:org.sdmx.infomodel.codelist=SDMX-HD:CL_FREQ">
+	  <structure:Name xml:lang="en">Frequency</structure:Name>
+	  <structure:Description xml:lang="en">Actual frequency of data	collection.</structure:Description>
+	  <xsl:for-each select="/Lists/List[@name='freq']"> 
+	    <xsl:for-each select="row"> 
+	      <xsl:if test="field[@column='sdmxhdid'] != ''">
+	        <xsl:if test="field[@column='sdmxhdname'] != ''">
+		    <structure:Code >
+		      <xsl:attribute name="value"><xsl:value-of select="field[@column='sdmxhdid']"/></xsl:attribute> 
+		      <xsl:attribute name="urn">urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_FREQ[<xsl:value-of select="/Lists/@version"/>]</xsl:attribute> 
+		    <structure:Description xml:lang="en"><xsl:value-of select="field[@column='sdmxhdname']"/></structure:Description>
+		    </structure:Code>		      
+	        </xsl:if>
+	      </xsl:if>
+	    </xsl:for-each>
+	  </xsl:for-each>
+	</structure:CodeList>
+
+	<structure:CodeList id="CL_VALUE_TYPE" agencyID="ZW_MOHCW" version="1.0" isFinal="false" urn="urn:sdmx:org.sdmx.infomodel.codelist=SDMX-HD:CL_VALUE_TYPE">
+	  <structure:Name xml:lang="en">Value Type</structure:Name>
+	  <structure:Description xml:lang="en">This distinguishes between targets and values.</structure:Description>
+	  <xsl:for-each select="/Lists/List[@name='value_type']"> 
+	    <xsl:for-each select="row"> 
+	      <xsl:if test="field[@column='sdmxhdid'] != ''">
+	        <xsl:if test="field[@column='sdmxhdname'] != ''">
+		  <structure:Code >
+		    <xsl:attribute name="value"><xsl:value-of select="field[@column='sdmxhdid']"/></xsl:attribute> 
+		    <xsl:attribute name="urn">urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_VALUE_TYPE[<xsl:value-of select="/Lists/@version"/>]</xsl:attribute> 
+		    <structure:Description xml:lang="en"><xsl:value-of select="field[@column='sdmxhdname']"/></structure:Description>
+		  </structure:Code>		      
+	        </xsl:if>
+	      </xsl:if>
+	    </xsl:for-each>
+	  </xsl:for-each>
+	</structure:CodeList>
+
+
+	<structure:CodeList id="CL_POST" agencyID="ZW_MOHCW" version="1.0" isFinal="false" urn="urn:sdmx:org.sdmx.infomodel.codelist=SDMX-HD:CL_POST">
+	  <structure:Name xml:lang="en">Post</structure:Name>		
+	  <xsl:for-each select="/Lists/List[@name='post']"> 
+	    <xsl:for-each select="row"> 
+	      <xsl:if test="field[@column='post_id'] != ''">
+	        <xsl:if test="field[@column='name'] != ''">
+		    <structure:Code >
+		      <xsl:attribute name="value"><xsl:value-of select="field[@column='post_id']"/></xsl:attribute> 
+		      <xsl:attribute name="urn">urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[<xsl:value-of select="/Lists/@version"/>]</xsl:attribute> 
+		      <structure:Description xml:lang="en"><xsl:value-of select="field[@column='name']"/></structure:Description>
+		    </structure:Code>		      
+	        </xsl:if>
+	      </xsl:if>
+	    </xsl:for-each>
+	  </xsl:for-each>
+	</structure:CodeList>
+<!--
+	<structure:CodeList id="CL_JOBGROUP" agencyID="KE_MOH" version="1.0" isFinal="false" urn="urn:sdmx:org.sdmx.infomodel.codelist=SDMX-HD:CL_JOBGROUP">
+	  <structure:Name xml:lang="en">Job Group</structure:Name>		
+	  <xsl:for-each select="/Lists/List[@name='jobgroup']"> 
+	    <xsl:for-each select="row"> 
+	      <xsl:if test="substring(field[@column='id'],13) != ''">
+	        <xsl:if test="field[@column='name'] != ''">
+		    <structure:Code >
+		      <xsl:attribute name="value"><xsl:value-of select="substring(field[@column='id'],13)"/></xsl:attribute> 
+		      <xsl:attribute name="urn">urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_JOBGROUP[<xsl:value-of select="/Lists/@version"/>]</xsl:attribute> 
+		      <structure:Description xml:lang="en"><xsl:value-of select="field[@column='name']"/></structure:Description>
+		    </structure:Code>		      
+	        </xsl:if>
+	      </xsl:if>
+	    </xsl:for-each>
+	  </xsl:for-each>
+	</structure:CodeList>-->
+	
+
+
+	<structure:CodeList id="CL_FACILITY" agencyID="ZW_MOHCW" version="1.0" isFinal="false" urn="urn:sdmx:org.sdmx.infomodel.codelist=SDMX-HD:CL_FACILITY">
+	  <structure:Name xml:lang="en">Facility</structure:Name>		
+	  <xsl:for-each select="/Lists/List[@name='Organisation units']"> 
+	    <xsl:for-each select="row"> 
+	      <xsl:if test="field[@column='Code'] != ''">
+	        <xsl:if test="field[@column='Short name'] != ''">
+		    <structure:Code >
+		      <xsl:attribute name="value"><xsl:value-of select="field[@column='Code']"/></xsl:attribute> 
+		      <xsl:attribute name="urn">urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_FACILITY[<xsl:value-of select="/Lists/@version"/>]</xsl:attribute> 
+		    <structure:Description xml:lang="en"><xsl:value-of select="field[@column='Short name']"/></structure:Description>
+		    </structure:Code>		      
+	        </xsl:if>
+	      </xsl:if>
+	    </xsl:for-each>
+	  </xsl:for-each>
+	</structure:CodeList> 
+
+
+
+
+      </CodeLists>
+      <Concepts>
+	<structure:Concept id="FACILITY" agencyID="ZW_MOHCW" version="1.0">
+	  <structure:Name xml:lang="en">FACILITY</structure:Name>
+	</structure:Concept>
+	<structure:Concept id="POST" agencyID="ZW_MOHCW" version="1.0">
+	  <structure:Name xml:lang="en">JOB</structure:Name>
+	</structure:Concept>
+	<!--<structure:Concept id="JOBGROUP" agencyID="KE_MOH" version="1.0">
+	  <structure:Name xml:lang="en">JOB GROUP</structure:Name>
+	</structure:Concept>-->
+
+      </Concepts>
+
+
+      <KeyFamilies>
+	<structure:KeyFamily id="KF_HW_POST_FAC" agencyID="ZW_MOHCW" version="1.0" isFinal="false">
+	  <structure:Name xml:lang="en">KeyFamily For health workers by post and facility</structure:Name>
+	  <structure:Description xml:lang="en"/>
+	  <structure:Components>
+	    <structure:Dimension crossSectionalAttachGroup="true" conceptRef="FREQ" conceptSchemeRef="CS_COMMON" conceptVersion="1.0" conceptSchemeAgency="SDMX-HD" codelist="CL_FREQ" codelistVersion="1.0" codelistAgency="SDMX-HD" isFrequencyDimension="true"/>
+	    <structure:Dimension crossSectionalAttachObservation="true" conceptRef="DATAELEMENT" conceptSchemeRef="CS_COMMON" conceptVersion="1.0" conceptSchemeAgency="SDMX-HD" codelist="CL_POST" codelistVersion="1.0" codelistAgency="ZW_MOHCW"/>
+	    <structure:Dimension crossSectionalAttachObservation="true" crossSectionalAttachGroup="true" conceptRef="FACILITY" conceptSchemeRef="CS_DIMENSION" conceptVersion="1.0" conceptSchemeAgency="ZW_MOHCW" codelist="CL_FACILITY" codelistVersion="1.0" codelistAgency="KE_MOH"/>
+	    <structure:Dimension crossSectionalAttachObservation="true" crossSectionalAttachGroup="true" conceptRef="VALUE_TYPE" conceptSchemeRef="CS_COMMON" conceptVersion="1.0" conceptSchemeAgency="SDMX-HD" codelist="CL_VALUE_TYPE" codelistVersion="1.0" codelistAgency="SDMX-HD"/>
+	    <structure:TimeDimension crossSectionalAttachGroup="true" conceptRef="TIME_PERIOD" conceptSchemeRef="CS_COMMON" conceptVersion="1.0" conceptSchemeAgency="SDMX-HD">
+	      <structure:TextFormat textType="ObservationalTimePeriod"/>
+	    </structure:TimeDimension>
+	    <structure:PrimaryMeasure conceptRef="OBS_VALUE" conceptSchemeRef="CS_COMMON" conceptVersion="1.0" conceptSchemeAgency="SDMX-HD">
+	      <structure:TextFormat textType="Decimal"/>
+	    </structure:PrimaryMeasure>
+	  </structure:Components>
+	</structure:KeyFamily>
+
+	<structure:KeyFamily id="KF_HW_JOBGROUP_FAC" agencyID="KE_MOH" version="1.0" isFinal="false">
+	  <structure:Name xml:lang="en">KeyFamily For health workers by job group and facility</structure:Name>
+	  <structure:Description xml:lang="en"/>
+	  <structure:Components>
+	    <structure:Dimension crossSectionalAttachGroup="true" conceptRef="FREQ" conceptSchemeRef="CS_COMMON" conceptVersion="1.0" conceptSchemeAgency="SDMX-HD" codelist="CL_FREQ" codelistVersion="1.0" codelistAgency="SDMX-HD" isFrequencyDimension="true"/>
+	    <structure:Dimension crossSectionalAttachObservation="true" conceptRef="DATAELEMENT" conceptSchemeRef="CS_COMMON" conceptVersion="1.0" conceptSchemeAgency="SDMX-HD" codelist="CL_JOBGROUP" codelistVersion="1.0" codelistAgency="KE_MOH"/>
+	    <structure:Dimension crossSectionalAttachObservation="true" crossSectionalAttachGroup="true" conceptRef="FACILITY" conceptSchemeRef="CS_DIMENSION" conceptVersion="1.0" conceptSchemeAgency="KE_MOH" codelist="CL_FACILITY" codelistVersion="1.0" codelistAgency="KE_MOH"/>
+	    <structure:Dimension crossSectionalAttachObservation="true" crossSectionalAttachGroup="true" conceptRef="VALUE_TYPE" conceptSchemeRef="CS_COMMON" conceptVersion="1.0" conceptSchemeAgency="SDMX-HD" codelist="CL_VALUE_TYPE" codelistVersion="1.0" codelistAgency="SDMX-HD"/>
+	    <structure:TimeDimension crossSectionalAttachGroup="true" conceptRef="TIME_PERIOD" conceptSchemeRef="CS_COMMON" conceptVersion="1.0" conceptSchemeAgency="SDMX-HD">
+	      <structure:TextFormat textType="ObservationalTimePeriod"/>
+	    </structure:TimeDimension>
+	    <structure:PrimaryMeasure conceptRef="OBS_VALUE" conceptSchemeRef="CS_COMMON" conceptVersion="1.0" conceptSchemeAgency="SDMX-HD">
+	      <structure:TextFormat textType="Decimal"/>
+	    </structure:PrimaryMeasure>
+	  </structure:Components>
+	</structure:KeyFamily>
+
+      </KeyFamilies>
+    </Structure>
+    
+  </xsl:template> 
+</xsl:stylesheet>
+
+
+

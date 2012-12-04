@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"> 
+  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/> 
+
+  <xsl:template match="/"> 
+
+    <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:common="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/common" xmlns:cross="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/cross" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:sdmx:org.sdmx.infomodel.keyfamily.KeyFamily=ZW_MOHCW:KF_HW_POST_FAC:1.0:cross" targetNamespace="urn:sdmx:org.sdmx.infomodel.keyfamily.KeyFamily=ZW_MOHCW:KF_HW_POST_FAC:1.0:cross" elementFormDefault="qualified" attributeFormDefault="unqualified">
+      <xs:import namespace="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/cross" schemaLocation="SDMXCrossSectionalData.xsd"/>
+      <xs:import namespace="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/common" schemaLocation="SDMXCommon.xsd"/>
+      <xsl:for-each select="/Lists/List"> 
+	<xsl:if test="@name = 'freq' or @name = 'value_type'  ">
+	  <xs:simpleType>
+	    <xs:restriction base="xs:string">
+	      <xsl:if test="@name = 'freq' ">
+		<xsl:attribute name="name">CL_FREQ</xsl:attribute> 
+	      </xsl:if>
+	      <xsl:if test="@name = 'value_type' ">
+		<xsl:attribute name="name">CL_VALUE_TYPE</xsl:attribute> 
+	      </xsl:if>
+	      <xsl:for-each select="row"> 
+		<xsl:if test="field[@column='sdmxhdid'] != ''">
+		  <xsl:if test="field[@column='sdmxhdname'] != ''">
+		    <xs:enumeration value="A">
+		      <xsl:attribute name="value"><xsl:value-of select="field[@column='sdmxhdid']"/></xsl:attribute>
+		      <xs:annotation>
+			<xs:documentation xml:lang="en"><xsl:value-of select="field[@column='sdmxhdname']"/></xs:documentation>
+		      </xs:annotation>
+		    </xs:enumeration>
+		  </xsl:if>
+		</xsl:if>
+	      </xsl:for-each>
+	    </xs:restriction >	  
+	  </xs:simpleType>
+	</xsl:if>
+	<xsl:if test="@name = 'Organisation units' ">
+	  <xs:simpleType>
+	    <xs:restriction base='xs:string' >	  
+	      <xsl:attribute name="name">CL_FACILITY</xsl:attribute> 
+	      <xsl:for-each select="row"> 
+		<xsl:if test="field[@column='Code'] != ''">
+		  <xsl:if test="field[@column='Short name'] != ''">
+		    <xs:enumeration value="A">
+		      <xsl:attribute name="value"><xsl:value-of select="field[@column='Code']"/></xsl:attribute>
+		      <xs:annotation>
+			<xs:documentation xml:lang="en"><xsl:value-of select="field[@column='Short name']"/></xs:documentation>
+		      </xs:annotation>
+		    </xs:enumeration>
+		  </xsl:if>
+		</xsl:if>
+	      </xsl:for-each>
+	    </xs:restriction >	  
+	  </xs:simpleType>
+	</xsl:if>
+	<xsl:if test="@name = 'post' ">
+	  <xs:simpleType>
+	    <xs:restriction base='xs:string'>	  
+	      <xsl:attribute name="name">CL_POST</xsl:attribute> 
+	      <xsl:for-each select="row"> 
+		<xsl:if test="field[@column='post_id'] != ''">
+		  <xsl:if test="field[@column='name'] != ''">
+		    <xs:enumeration value="A">
+		      <xsl:attribute name="value"><xsl:value-of select="field[@column='post_id']"/></xsl:attribute>
+		      <xs:annotation>
+			<xs:documentation xml:lang="en"><xsl:value-of select="field[@column='name']"/></xs:documentation>
+		      </xs:annotation>
+		    </xs:enumeration>
+		  </xsl:if>
+		</xsl:if>
+	      </xsl:for-each>
+	    </xs:restriction >	  
+	  </xs:simpleType>
+	</xsl:if>
+      </xsl:for-each>
+
+      <xs:simpleType name="TIME_PERIODType">
+	<xs:restriction base="common:TimePeriodType"/>
+      </xs:simpleType>
+      <xs:simpleType name="OBS_VALUEType">
+	<xs:restriction base="xs:decimal"/>
+      </xs:simpleType>
+      <xs:element name="DataSet" type="DataSetType" substitutionGroup="cross:DataSet"/>
+      <xs:complexType name="DataSetType">
+	<xs:complexContent>
+	  <xs:extension base="cross:DataSetType">
+	    <xs:choice minOccurs="0" maxOccurs="unbounded">
+	      <xs:element ref="Group"/>
+	      <xs:element ref="Section"/>
+	      <xs:element name="Annotations" type="common:AnnotationsType"/>
+	    </xs:choice>
+	  </xs:extension>
+	</xs:complexContent>
+      </xs:complexType>
+      <xs:element name="Group" type="GroupType" substitutionGroup="cross:Group"/>
+      <xs:complexType name="GroupType">
+	<xs:complexContent>
+	  <xs:extension base="cross:GroupType">
+	    <xs:sequence>
+	      <xs:element ref="Section" minOccurs="0" maxOccurs="unbounded"/>
+	      <xs:element name="Annotations" type="common:AnnotationsType" minOccurs="0"/>
+	    </xs:sequence>
+	    <xs:attribute name="FREQ" type="CL_FREQ" use="optional"/>
+	    <xs:attribute name="FACILITY" type="CL_FACILITY" use="optional"/>
+	    <xs:attribute name="VALUE_TYPE" type="CL_VALUE_TYPE" use="optional"/>
+	    <xs:attribute name="TIME_PERIOD" type="TIME_PERIODType" use="optional"/>
+	  </xs:extension>
+	</xs:complexContent>
+      </xs:complexType>
+      <xs:element name="Section" type="SectionType" substitutionGroup="cross:Section"/>
+      <xs:complexType name="SectionType">
+	<xs:complexContent>
+	  <xs:extension base="cross:SectionType">
+	    <xs:choice minOccurs="0" maxOccurs="unbounded">
+	      <xs:element ref="OBS_VALUE"/>
+	      <xs:element name="Annotations" type="common:AnnotationsType"/>
+	    </xs:choice>
+	  </xs:extension>
+	</xs:complexContent>
+      </xs:complexType>
+      <xs:element name="OBS_VALUE" type="ObsType" substitutionGroup="cross:Obs"/>
+      <xs:complexType name="ObsType">
+	<xs:complexContent>
+	  <xs:extension base="cross:ObsType">
+	    <xs:sequence>
+	      <xs:element name="Annotations" type="common:AnnotationsType" minOccurs="0"/>
+	    </xs:sequence>
+	    <xs:attribute name="DATAELEMENT" type="CL_POST" use="optional"/>
+	    <xs:attribute name="FACILITY" type="CL_FACILITY" use="optional"/>
+	    <xs:attribute name="VALUE_TYPE" type="CL_VALUE_TYPE" use="optional"/>
+	    <xs:attribute name="value" type="OBS_VALUEType" use="optional"/>
+	  </xs:extension>
+	</xs:complexContent>
+      </xs:complexType>
+    </xs:schema>
+  </xsl:template>
+</xsl:stylesheet>
