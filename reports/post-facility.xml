@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<postList>
+    <post name="SISTER COMMUNITY" postId="000006">
+        <facility code="00001-07-5525" shortName="RUSITU MISSION HOSPITAL">
+            <value>0</value>
+        </facility>
+    </post>
+    <post name="DIRECTOR CONDITIONS OF SERVICE AND PUBLIC RELATIONS" postId="0004">
+        <facility code="00005-05-5525" shortName="DANDARAVA/ GARAMWERA CLINIC">
+            <value>0</value>
+        </facility>
+    </post>
+    <post name="DEPUTY DIRECTOR NON  COMMUNICABLE DISEASES" postId="0">
+        <facility code="9040-06-5060" shortName="TSAKARI RHC">
+            <value>0</value>
+        </facility>
+        <facility code="0000000-02-5525" shortName="OLD MUTARE MISSION HOSPITAL">
+            <value>0</value>
+        </facility>
+    </post>
+    <post name="DEPUTY DIRECTOR NON  COMMUNICABLE DISEASES" postId="0">
+        <facility code="9040-06-5060" shortName="TSAKARI RHC">
+            <value>0</value>
+        </facility>
+        <facility code="0000000-02-5525" shortName="OLD MUTARE MISSION HOSPITAL">
+            <value>0</value>
+        </facility>
+    </post>
+</postList>
