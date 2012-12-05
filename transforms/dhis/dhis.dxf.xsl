@@ -7,7 +7,9 @@
   <xsl:variable name="month" select="/Lists/@month"/>
   <xsl:variable name="day" select="/Lists/@day"/>
   <xsl:template match="/">
-  <dxf>
+  
+  <dxf  xmlns="http://dhis2.org/schema/dxf/1.0" xmlns:msg="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message" xmlns:struct="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  
     <xsl:apply-templates select="/Lists/List[@name='post']" mode="data_element"/>
     <xsl:apply-templates select="/Lists/List[@name='post']" mode="group_member"/>
     </dxf>
@@ -22,7 +24,7 @@
             <dataElement>
               <name><xsl:value-of select="normalize-space(field[@column='name'])"/></name>
      <shortName><xsl:value-of select="substring(normalize-space(field[@column='name']),1,25)"/></shortName>
-          <id>hris_id<xsl:value-of select="normalize-space(field[@column='post_id'])"/></id>    
+          <id>post<xsl:value-of select="normalize-space(field[@column='post_id'])"/></id>    
           
       <description></description>
       <active>true</active>
@@ -45,8 +47,8 @@
         <xsl:if test="field[@column='post_id'] != ''">
           <xsl:if test="field[@column='name'] != ''">
             <dataElementGroupMember>
-            <dataElementGroup>26</dataElementGroup> <!--get id from dhis to be changed when moving to another dhis instance -->
-      		<dataElement>hris_id<xsl:value-of select="normalize-space(field[@column='post_id'])"/></dataElement>
+            <dataElementGroup>20</dataElementGroup> <!--get id from dhis to be changed when moving to another dhis instance -->
+      		<dataElement>post<xsl:value-of select="normalize-space(field[@column='post_id'])"/></dataElement>
                  </dataElementGroupMember>
           </xsl:if>
         </xsl:if>

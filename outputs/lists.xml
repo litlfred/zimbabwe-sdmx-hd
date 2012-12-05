@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<Lists version="1.0" year="2012" month="12" day="05" timestampUnix="1354696837" timestampMysql="2012-12-05 11:40:37" date="Wed, 05 Dec 12 11:40:37 +0300">
+<Lists version="1.0" year="2012" month="12" day="05" timestampUnix="1354698497" timestampMysql="2012-12-05 12:08:17" date="Wed, 05 Dec 12 12:08:17 +0300">
   <List name="freq">
     <row>
       <field column="sdmxhdid">A</field>
