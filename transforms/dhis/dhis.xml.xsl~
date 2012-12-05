@@ -7,6 +7,7 @@
   <xsl:template match="/">
   <dxf>
     <xsl:apply-templates select="/Lists/List[@name='post']"/>
+    <xsl:apply-templates select="/Lists/List[@name='post']" mode="group_member"/>
     </dxf>
   </xsl:template>
 
@@ -35,6 +36,33 @@
       </xsl:for-each>
       </dataElements>
     </xsl:template>
+    
+     <xsl:template match="List" mode="group_member">
+      <dataElementGroupMembers>
+      <xsl:for-each select="row">
+        <xsl:sort data-type="text" select="field[@column='name']"/>
+        <xsl:if test="field[@column='post_id'] != ''">
+          <xsl:if test="field[@column='name'] != ''">
+            <dataElementGroupMember>
+            <dataElementGroup>26</dataElementGroup> <!--get id from dhis to be changed when moving to another dhis instance -->
+      		<dataElement>hris_id<xsl:value-of select="normalize-space(field[@column='post_id'])"/></dataElement>
+                 </dataElementGroupMember>
+          </xsl:if>
+        </xsl:if
+      </xsl:for-each>
+      </dataElementGroupMembers>
+    </xsl:template>
+    
+    
+ <!-- assume that I have already created a dataElementGroup "Post" with id 987654 -->
+<dataElementGroupMembers>
+   <dataElementGroupMember>
+      <dataElementGroup>987654</dataElementGroup>
+      <dataElement>123456</dataElement>
+   </dataElementGroupMember>    
+   <!--  etc -->
+ </dataElementGroupMembers>
+</dxf>
 
 </xsl:stylesheet>
 
