@@ -1,14 +1,17 @@
+This is the repository for SDMX-HD as implemented in Zimbabwe and the tools used to generate it.
+
+This structure of the directories and files follows that of 
+ http://www.ihris.org/wiki/SDMX-HD_Data_Export_--_Kenya
 
 These files are designed to be processed by the transform tools in:
-	192.168.1.2/git-repositories/his-transform-tools
+ https://code.launchpad.net/~his-interop/his-transform-tools/trunk
+ 192.168.1.2/git-repositories/his-transform-tools (at HITRAC)
 
-Some details on expected file/directory structure can be found here:     
-     http://open.intrahealth.org/mediawiki/SDMX-HD_Data_Export_--_Kenya
 
 To run the transform tools you can do something like:
-    git clone ssh://username@192.168.1.2/git-repositories/his-transform-tools/.git
-    cd zimbabwe-sdmx-hd    
-    php ../his-transform-tools/runme.php
+  git clone ssh://username@192.168.1.2/git-repositories/his-transform-tools/.git
+  cd zimbabwe-sdmx-hd    
+  php ../his-transform-tools/runme.php
 
 
 
