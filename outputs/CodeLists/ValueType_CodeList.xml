@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeList id="CL_VALUE_TYPE" agencyID="ZW_MOHCW" version="1.0" isFinal="false">
+  <Name xml:lang="en">Job</Name>
+  <Code value="0">
+    <Description>Target</Description>
+  </Code>
+  <Code value="1">
+    <Description>Value</Description>
+  </Code>
+</CodeList>

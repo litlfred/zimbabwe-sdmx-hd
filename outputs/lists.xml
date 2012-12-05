@@ -1,5 +1,99 @@
 <?xml version="1.0"?>
-<Lists version="1.0" year="2012" month="12" day="03" timestampUnix="1354531142" timestampMysql="2012-12-03 13:39:02" date="Mon, 03 Dec 12 13:39:02 +0300">
+<Lists version="1.0" year="2012" month="12" day="05" timestampUnix="1354693218" timestampMysql="2012-12-05 02:40:18" date="Wed, 05 Dec 12 02:40:18 -0500">
+  <List name="Organisation units">
+    <row>
+      <field column="Short name">Harare Hospital</field>
+      <field column="Code">Tr758867568</field>
+      <field column="Opening date">1900-01-01</field>
+      <field column="Closed date"></field>
+      <field column="Active">Yes</field>
+      <field column="Comment"></field>
+    </row>
+    <row>
+      <field column="Short name">Parirenyatwa Hospitall</field>
+      <field column="Code">g9796769669d</field>
+      <field column="Opening date">1900-01-01</field>
+      <field column="Closed date"></field>
+      <field column="Active">Yes</field>
+      <field column="Comment"></field>
+    </row>
+    <row>
+      <field column="Short name">Zimbababwe</field>
+      <field column="Code">bg76576746</field>
+      <field column="Opening date">1900-01-01</field>
+      <field column="Closed date"></field>
+      <field column="Active">Yes</field>
+      <field column="Comment"></field>
+    </row>
+    <row>
+      <field column="Short name">Chitungwiza</field>
+      <field column="Code">g758768565yt</field>
+      <field column="Opening date">1900-01-01</field>
+      <field column="Closed date"></field>
+      <field column="Active">Yes</field>
+      <field column="Comment"></field>
+    </row>
+  </List>
+  <List name="Organisation unit hierarchy">
+    <row>
+      <field column="Organisation unit level">1</field>
+      <field column="">2</field>
+    </row>
+    <row>
+      <field column="Organisation unit level">Zimbababwe</field>
+      <field column=""></field>
+    </row>
+    <row>
+      <field column="Organisation unit level">Parirenyatwa Hospitall</field>
+      <field column=""></field>
+    </row>
+    <row>
+      <field column="Organisation unit level"></field>
+      <field column="">Chitungwiza</field>
+    </row>
+    <row>
+      <field column="Organisation unit level">Harare Hospital</field>
+      <field column=""></field>
+    </row>
+  </List>
+  <List name="freq">
+    <row>
+      <field column="sdmxhdid">A</field>
+      <field column="sdmxhdname">Annually</field>
+    </row>
+    <row>
+      <field column="sdmxhdid">S</field>
+      <field column="sdmxhdname">Half-yearly, semester,biannual</field>
+    </row>
+    <row>
+      <field column="sdmxhdid">Q</field>
+      <field column="sdmxhdname">Quarterly</field>
+    </row>
+    <row>
+      <field column="sdmxhdid">M</field>
+      <field column="sdmxhdname">Monthly</field>
+    </row>
+    <row>
+      <field column="sdmxhdid">W</field>
+      <field column="sdmxhdname">Weekly</field>
+    </row>
+    <row>
+      <field column="sdmxhdid">D</field>
+      <field column="sdmxhdname">Daily</field>
+    </row>
+    <row>
+      <field column="sdmxhdid">B</field>
+      <field column="sdmxhdname">Daily - business week</field>
+    </row>
+    <row>
+      <field column="sdmxhdid">N</field>
+      <field column="sdmxhdname">Minutely</field>
+    </row>
+    <row>
+      <field column="sdmxhdid">Z</field>
+      <field column="sdmxhdname">Biennially, every two years</field>
+    </row>
+  </List>
   <List name="post">
     <row>
       <field column="post_id">0</field>
@@ -6706,6 +6800,16 @@
       <field column="modified_by">NULL</field>
       <field column="date_modified">2012-11-07 00:00:00</field>
       <field column="description">1</field>
+    </row>
+  </List>
+  <List name="value_type">
+    <row>
+      <field column="sdmxhdid">0</field>
+      <field column="sdmxhdname">Target</field>
+    </row>
+    <row>
+      <field column="sdmxhdid">1</field>
+      <field column="sdmxhdname">Value</field>
     </row>
   </List>
 </Lists>

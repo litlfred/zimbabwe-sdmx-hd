@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeList id="CL_FREQ" agencyID="ZW_MOHCW" version="1.0" isFinal="false">
+  <Name xml:lang="en">Job</Name>
+  <Code value="A">
+    <Description>Annually</Description>
+  </Code>
+  <Code value="S">
+    <Description>Half-yearly, semester,biannual</Description>
+  </Code>
+  <Code value="Q">
+    <Description>Quarterly</Description>
+  </Code>
+  <Code value="M">
+    <Description>Monthly</Description>
+  </Code>
+  <Code value="W">
+    <Description>Weekly</Description>
+  </Code>
+  <Code value="D">
+    <Description>Daily</Description>
+  </Code>
+  <Code value="B">
+    <Description>Daily - business week</Description>
+  </Code>
+  <Code value="N">
+    <Description>Minutely</Description>
+  </Code>
+  <Code value="Z">
+    <Description>Biennially, every two years</Description>
+  </Code>
+</CodeList>
