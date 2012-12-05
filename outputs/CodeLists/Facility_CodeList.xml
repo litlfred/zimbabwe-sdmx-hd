@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeList id="CL_FACILITY" agencyID="ZW_MOHCW" version="1.0" isFinal="false">
+  <Name xml:lang="en">Facility</Name>
+  <Code value="g758768565yt">
+    <Description>Chitungwiza</Description>
+  </Code>
+  <Code value="Tr758867568">
+    <Description>Harare Hospital</Description>
+  </Code>
+  <Code value="g9796769669d">
+    <Description>Parirenyatwa Hospitall</Description>
+  </Code>
+  <Code value="bg76576746">
+    <Description>Zimbababwe</Description>
+  </Code>
+</CodeList>
