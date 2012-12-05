@@ -5,15 +5,15 @@
   <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
 
   <xsl:template match="/">
-  <CrossSectionalData xmlns="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message" xmlns:ns="urn:sdmx:org.sdmx.infomodel.keyfamily.KeyFamily=ZW_MOHCW:KF_HW_POST_FAC:1.0:cross" xmlns:cross="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/cross" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure SDMXMessage.xsd urn:sdmx:org.sdmx.infomodel.keyfamily.KeyFamily=ZW_MOHCW:KF_HW_POST_FAC:1.0:cross KF_HW_POST_FAC.xsd http://www.SDMX.org/resources/SDMXML/schemas/v2_0/cross SDMXCrossSectionalData.xsd">
+  <CrossSectionalData xmlns="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message" xmlns:ns="urn:sdmx:org.sdmx.infomodel.keyfamily.KeyFamily=SL-MOHS:KF_HW_POST_FAC:1.0:cross" xmlns:cross="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/cross" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure SDMXMessage.xsd urn:sdmx:org.sdmx.infomodel.keyfamily.KeyFamily=SL-MOHS:KF_HW_POST_FAC:1.0:cross KF_HW_POST_FAC.xsd http://www.SDMX.org/resources/SDMXML/schemas/v2_0/cross SDMXCrossSectionalData.xsd">
   <Header>
     <ID>SDMX-HD-CSDS</ID>
     <Test>true</Test>
     <Truncated>false</Truncated>
-    <Name xml:lang="en">ZHRIS SDMX-HD Export</Name>
+    <Name xml:lang="en">OpenMRS SDMX-HD Export</Name>
     <Prepared>2010-07-01T21:19:22-04:00</Prepared>
-    <Sender id="ZW_MOHCW">
-      <Name>ZHRIS</Name>
+    <Sender id="ZHRIS">
+      <Name>iHRIS</Name>
     </Sender>
   </Header>
 
