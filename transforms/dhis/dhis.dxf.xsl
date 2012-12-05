@@ -3,14 +3,17 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   
   <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
+  <xsl:variable name="year" select="/Lists/@year"/>
+  <xsl:variable name="month" select="/Lists/@month"/>
+  <xsl:variable name="day" select="/Lists/@day"/>
   <xsl:template match="/">
   <dxf>
-    <xsl:apply-templates select="/Lists/List[@name='post']"/>
+    <xsl:apply-templates select="/Lists/List[@name='post']" mode="data_element"/>
     <xsl:apply-templates select="/Lists/List[@name='post']" mode="group_member"/>
     </dxf>
   </xsl:template>
   <!-- output the faciltiy code list-->
-  <xsl:template match="List">
+  <xsl:template match="List[@name='post']" mode="data_element">
       <dataElements>
       <xsl:for-each select="row">
         <xsl:sort data-type="text" select="field[@column='name']"/>
@@ -26,7 +29,8 @@
       <type>int</type>
       <domainType>aggregate</domainType>
       <aggregationOperator>sum</aggregationOperator>
-      <lastUpdated><xsl:value-of select="/Lists[@year]"/>-<xsl:value-of select="/Lists[@month]"/>-<xsl:value-of select="/Lists[@day]"/></lastUpdated>
+      <lastUpdated><xsl:value-of select="$year"/>-<xsl:value-of select="$month"/>-<xsl:value-of select="$day"/>
+      </lastUpdated>
                  </dataElement>
           </xsl:if>
         </xsl:if>
@@ -34,7 +38,7 @@
       </dataElements>
     </xsl:template>
     
-     <xsl:template match="List" mode="group_member">
+      <xsl:template match="List[@name='post']" mode="group_member">
       <dataElementGroupMembers>
       <xsl:for-each select="row">
         <xsl:sort data-type="text" select="field[@column='name']"/>
@@ -45,7 +49,7 @@
       		<dataElement>hris_id<xsl:value-of select="normalize-space(field[@column='post_id'])"/></dataElement>
                  </dataElementGroupMember>
           </xsl:if>
-        </xsl:if
+        </xsl:if>
       </xsl:for-each>
       </dataElementGroupMembers>
     </xsl:template>

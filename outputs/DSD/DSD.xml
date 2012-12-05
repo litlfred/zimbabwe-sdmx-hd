@@ -1,0 +1,1542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Structure xmlns="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message" xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message ../schema/SDMXMessage.xsd    http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure ../schema/SDMXStructure.xsd">
+  <Header>
+    <ID>SDMX-HD-DSD</ID>
+    <Test>true</Test>
+    <Name xml:lang="en">SDMX Health Domain</Name>
+    <Prepared>2012-12-05</Prepared>
+    <Sender id="ZW_MOHCW">
+      <Name>Zimbabwe MOHCW</Name>
+      <Contact>
+        <Name xml:lang="en"/>
+        <Department/>
+        <Telephone/>
+        <Email/>
+      </Contact>
+    </Sender>
+  </Header>
+  <OrganisationSchemes>
+    <structure:OrganisationScheme id="ZIMBABWE_HIS" agencyID="HITRAC" version="1.0" isFinal="false">
+      <structure:Name xml:lang="en">Zimbabwe HIS Organisations</structure:Name>
+      <structure:Description xml:lang="en">Agencies working with Zimbabwe Health Information Systems</structure:Description>
+      <structure:Agencies>
+        <structure:Agency id="ZW_MOHCW" version="1.0">
+          <structure:Name xml:lang="en">Zimbabwe Ministry of Health and Child Welfare</structure:Name>
+          <structure:Description xml:lang="en">Zimbabwe Ministry of Health and Child Welfare</structure:Description>
+        </structure:Agency>
+      </structure:Agencies>
+    </structure:OrganisationScheme>
+  </OrganisationSchemes>
+  <CodeLists>
+    <structure:CodeList id="CL_FREQ" agencyID="ZW_MOHCW" version="1.0" isFinal="false" urn="urn:sdmx:org.sdmx.infomodel.codelist=SDMX-HD:CL_FREQ">
+      <structure:Name xml:lang="en">Frequency</structure:Name>
+      <structure:Description xml:lang="en">Actual frequency of data	collection.</structure:Description>
+      <structure:Code value="A" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_FREQ[1.0]">
+        <structure:Description xml:lang="en">Annually</structure:Description>
+      </structure:Code>
+      <structure:Code value="S" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_FREQ[1.0]">
+        <structure:Description xml:lang="en">Half-yearly, semester,biannual</structure:Description>
+      </structure:Code>
+      <structure:Code value="Q" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_FREQ[1.0]">
+        <structure:Description xml:lang="en">Quarterly</structure:Description>
+      </structure:Code>
+      <structure:Code value="M" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_FREQ[1.0]">
+        <structure:Description xml:lang="en">Monthly</structure:Description>
+      </structure:Code>
+      <structure:Code value="W" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_FREQ[1.0]">
+        <structure:Description xml:lang="en">Weekly</structure:Description>
+      </structure:Code>
+      <structure:Code value="D" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_FREQ[1.0]">
+        <structure:Description xml:lang="en">Daily</structure:Description>
+      </structure:Code>
+      <structure:Code value="B" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_FREQ[1.0]">
+        <structure:Description xml:lang="en">Daily - business week</structure:Description>
+      </structure:Code>
+      <structure:Code value="N" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_FREQ[1.0]">
+        <structure:Description xml:lang="en">Minutely</structure:Description>
+      </structure:Code>
+      <structure:Code value="Z" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_FREQ[1.0]">
+        <structure:Description xml:lang="en">Biennially, every two years</structure:Description>
+      </structure:Code>
+    </structure:CodeList>
+    <structure:CodeList id="CL_VALUE_TYPE" agencyID="ZW_MOHCW" version="1.0" isFinal="false" urn="urn:sdmx:org.sdmx.infomodel.codelist=SDMX-HD:CL_VALUE_TYPE">
+      <structure:Name xml:lang="en">Value Type</structure:Name>
+      <structure:Description xml:lang="en">This distinguishes between targets and values.</structure:Description>
+      <structure:Code value="0" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_VALUE_TYPE[1.0]">
+        <structure:Description xml:lang="en">Target</structure:Description>
+      </structure:Code>
+      <structure:Code value="1" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_VALUE_TYPE[1.0]">
+        <structure:Description xml:lang="en">Value</structure:Description>
+      </structure:Code>
+    </structure:CodeList>
+    <structure:CodeList id="CL_POST" agencyID="ZW_MOHCW" version="1.0" isFinal="false" urn="urn:sdmx:org.sdmx.infomodel.codelist=SDMX-HD:CL_POST">
+      <structure:Name xml:lang="en">Post</structure:Name>
+      <structure:Code value="0" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DEPUTY DIRECTOR NON  COMMUNICABLE DISEASES</structure:Description>
+      </structure:Code>
+      <structure:Code value="00" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DEPUTY DIRECTOR NON COMMUNICABLE DISEASES</structure:Description>
+      </structure:Code>
+      <structure:Code value="00000" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">CUBAN MEDICAL PERSONAL</structure:Description>
+      </structure:Code>
+      <structure:Code value="000003" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PORT HEALTH OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="000005" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SISTER IN CHARGE COMMUNITY</structure:Description>
+      </structure:Code>
+      <structure:Code value="000006" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SISTER COMMUNITY</structure:Description>
+      </structure:Code>
+      <structure:Code value="000007" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">CLINICAL NURSING OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="000008" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PORT HEALTH TECHNICIAN</structure:Description>
+      </structure:Code>
+      <structure:Code value="000009" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">HEALTH SERVICES ADMINISTRATOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="000010" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">X-RAY OPERATOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="0001" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">EXECUTIVE DIRECTOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="0002" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DEPUTY DIRECTOR CONDITIONS OF SERVICE</structure:Description>
+      </structure:Code>
+      <structure:Code value="0003" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DEPUTY DIRECTOR LEGAL AFFAIRS</structure:Description>
+      </structure:Code>
+      <structure:Code value="0004" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DIRECTOR CONDITIONS OF SERVICE AND PUBLIC RELATIONS</structure:Description>
+      </structure:Code>
+      <structure:Code value="0005" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DEPUTY DIRECTOR MANPOWER PLANNING AND DEVELOPMENT</structure:Description>
+      </structure:Code>
+      <structure:Code value="0006" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SNR/ PRINCIPAL CONDITIONS OF SERVICE OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="0007" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">CHIEF CORPORATE SERVICE OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="0008" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">INFORMATION OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="0009" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">INFOMATION OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="001" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">TO DELETE</structure:Description>
+      </structure:Code>
+      <structure:Code value="0010" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">CORPORATE SERVICE OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="0011" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DATA CAPTURE CLERK</structure:Description>
+      </structure:Code>
+      <structure:Code value="0012" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">MACHINE OPERATOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="0013" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">EXECUTIVE SECRETARY</structure:Description>
+      </structure:Code>
+      <structure:Code value="0014" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">RECEPTIONIST</structure:Description>
+      </structure:Code>
+      <structure:Code value="0015" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">GROUNDSMAN</structure:Description>
+      </structure:Code>
+      <structure:Code value="0016" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SNR/PRIN LEGAL OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="004750" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">MICROSCOPIST</structure:Description>
+      </structure:Code>
+      <structure:Code value="01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SECRETARY FOR HEALTH AND CHILD WELFARE</structure:Description>
+      </structure:Code>
+      <structure:Code value="01110" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">MAXILLO FACIAL SURGEON</structure:Description>
+      </structure:Code>
+      <structure:Code value="0112569" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">ELECTRICIAN</structure:Description>
+      </structure:Code>
+      <structure:Code value="011519" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">ADMINISTRATIVE OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="012296" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">NURSE AIDE</structure:Description>
+      </structure:Code>
+      <structure:Code value="012385" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PRINCIPAL TUTOR RADIOGRAPHY</structure:Description>
+      </structure:Code>
+      <structure:Code value="01245" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DIRECTOR TRAINING SERVICES</structure:Description>
+      </structure:Code>
+      <structure:Code value="012569" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">CHIEF EXECUTIVE OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="012589" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">ALLOCATIONS OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="014258" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">REGISTRY CLASSIFIER / CLERK</structure:Description>
+      </structure:Code>
+      <structure:Code value="014523" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">STATE CERTIFIED NURSE</structure:Description>
+      </structure:Code>
+      <structure:Code value="014566" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">ASSISTANT HEALTH INFORMATION OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="014567" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">BAKER</structure:Description>
+      </structure:Code>
+      <structure:Code value="014586" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">HOSPITAL EQUIPMENT ENGINEER</structure:Description>
+      </structure:Code>
+      <structure:Code value="014588" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PHARMACY TECHNICIAN</structure:Description>
+      </structure:Code>
+      <structure:Code value="014589" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">CHARGE HAND</structure:Description>
+      </structure:Code>
+      <structure:Code value="0145896" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">STUDENT RADIOGRAPHER</structure:Description>
+      </structure:Code>
+      <structure:Code value="014598" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PLUMBER</structure:Description>
+      </structure:Code>
+      <structure:Code value="014693" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">CHIEF HOSPITAL EQUIPMENT TECHNICIAN</structure:Description>
+      </structure:Code>
+      <structure:Code value="014723" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">REGISTERED GENERAL NURSE /SENIOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="014725" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">TRAINEE ORTHO TECHNICIAN</structure:Description>
+      </structure:Code>
+      <structure:Code value="0147366" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">HOSPITAL CLAIMS ASSESOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="014756" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">BUILDER / BRICKLAYER</structure:Description>
+      </structure:Code>
+      <structure:Code value="014759" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">ASSISTANT BUYER</structure:Description>
+      </structure:Code>
+      <structure:Code value="0147693" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SWITCH BOARD SUPERVISOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="014784" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">GARDENER</structure:Description>
+      </structure:Code>
+      <structure:Code value="014785" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">JUNIOR RESIDENT MEDICAL OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="0147852" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">STORES CONTROLLER( PHARMACY)</structure:Description>
+      </structure:Code>
+      <structure:Code value="0147889" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">WELDER</structure:Description>
+      </structure:Code>
+      <structure:Code value="014789" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SPECIALISTS / CONSULTANT</structure:Description>
+      </structure:Code>
+      <structure:Code value="0147893" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">STATE CERTIFIED MEDICAL LABORATORY TRAINEE</structure:Description>
+      </structure:Code>
+      <structure:Code value="014790" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">REGISTRARS SNR/JNR</structure:Description>
+      </structure:Code>
+      <structure:Code value="0147963" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">CATERING ATTENDANT</structure:Description>
+      </structure:Code>
+      <structure:Code value="014963" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SECURITY OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="017369" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">ACCOUNTS CLERK</structure:Description>
+      </structure:Code>
+      <structure:Code value="018348" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">MEDICAL SUPERITENDENT II</structure:Description>
+      </structure:Code>
+      <structure:Code value="019844" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DIRECTOR OF CLINICAL SERVICES</structure:Description>
+      </structure:Code>
+      <structure:Code value="02" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PRINCIPAL DIRECTOR CURATIVE</structure:Description>
+      </structure:Code>
+      <structure:Code value="020001" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">THEATRE HAND</structure:Description>
+      </structure:Code>
+      <structure:Code value="020256" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">BOOT MAKER</structure:Description>
+      </structure:Code>
+      <structure:Code value="023578" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">MEDICAL LABORATORY SCIENTIST/ SENIOR/ PRINCIPAL</structure:Description>
+      </structure:Code>
+      <structure:Code value="025689" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">MATRON III</structure:Description>
+      </structure:Code>
+      <structure:Code value="025895" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SPECIALIST- HEAD OF DEPARTMENT</structure:Description>
+      </structure:Code>
+      <structure:Code value="026971" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">MINISTER'S DRIVER</structure:Description>
+      </structure:Code>
+      <structure:Code value="027024" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">GROUNDS MAN ASSISTANT</structure:Description>
+      </structure:Code>
+      <structure:Code value="03" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PRINCIPAL DIRECTOR PREVENTIVE</structure:Description>
+      </structure:Code>
+      <structure:Code value="030022" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">ASSISTANT CHIEF RADIOGRAPHER</structure:Description>
+      </structure:Code>
+      <structure:Code value="030023" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">TAILOR ASST</structure:Description>
+      </structure:Code>
+      <structure:Code value="030024" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">ASSISTANT CLINICAL PSYCHOLOGIST</structure:Description>
+      </structure:Code>
+      <structure:Code value="030027" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">ASSISTANT LAUNDRY SUPERINTENDTENT</structure:Description>
+      </structure:Code>
+      <structure:Code value="030028" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SENIOR LAUNDRY HAND</structure:Description>
+      </structure:Code>
+      <structure:Code value="035566" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SENIOR AMBULANCE DRIVER</structure:Description>
+      </structure:Code>
+      <structure:Code value="035567" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">AMBULANCE DRIVER/ SENIOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="035631" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SCN</structure:Description>
+      </structure:Code>
+      <structure:Code value="035704" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">MEDICAL LABORATORY ASSISTANT</structure:Description>
+      </structure:Code>
+      <structure:Code value="036691" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">ARTISAN</structure:Description>
+      </structure:Code>
+      <structure:Code value="036857" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SENIOR INSTRUCTOR RADIOGRAPHER</structure:Description>
+      </structure:Code>
+      <structure:Code value="036958" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PARALEGAL CLERK</structure:Description>
+      </structure:Code>
+      <structure:Code value="037513" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">TYPIST/STENOGRAPHER</structure:Description>
+      </structure:Code>
+      <structure:Code value="039643" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">REGISTRY CLERK/CLASSIFIER</structure:Description>
+      </structure:Code>
+      <structure:Code value="039644" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">RECORDS AND INFOR ASSISTANT</structure:Description>
+      </structure:Code>
+      <structure:Code value="039645" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">REGISTRY SUPERVISOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="039647" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">RECORDS AND INFORMATION SUPERVISOR (DIPLOMA)</structure:Description>
+      </structure:Code>
+      <structure:Code value="039651" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">RECORDS AND INFOR ASSISTANT - DIPLOMA</structure:Description>
+      </structure:Code>
+      <structure:Code value="039714" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SENIOR EXECUTIVE ASSISTANT (TYPING SUPERVISOR DIPLOMA)</structure:Description>
+      </structure:Code>
+      <structure:Code value="039722" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PRIVATE SECRETARY 1</structure:Description>
+      </structure:Code>
+      <structure:Code value="039725" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SENIOR EXECUTIVE  ASSISTANT (PRIVATE SECRETARY 1 HND)</structure:Description>
+      </structure:Code>
+      <structure:Code value="039727" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">CLERK</structure:Description>
+      </structure:Code>
+      <structure:Code value="039729" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">HUMAN RESOURCES ASSISTANT</structure:Description>
+      </structure:Code>
+      <structure:Code value="04" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PRINCIPAL DIRECTOR PLANNING AND EVALUATION</structure:Description>
+      </structure:Code>
+      <structure:Code value="041099" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">EXECUTIVE OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="041102" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">ADMINISTRATION OFFICER </structure:Description>
+      </structure:Code>
+      <structure:Code value="041511" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">HUMAN RESOURCES OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="041517" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">ADMINISTRATION  ASSISTANT</structure:Description>
+      </structure:Code>
+      <structure:Code value="042024" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">AUDIT ASSISTANT</structure:Description>
+      </structure:Code>
+      <structure:Code value="042284" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">ACCOUNTING ASSISTANT</structure:Description>
+      </structure:Code>
+      <structure:Code value="044444" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">NUTRITIONIST</structure:Description>
+      </structure:Code>
+      <structure:Code value="044558" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SENIOR CRECHE SUPERVISOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="045123" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">CHIEF GOVERNMENT PATHOLOGIST</structure:Description>
+      </structure:Code>
+      <structure:Code value="045189" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PHYSICIST /SENIOR/PRINCIPAL</structure:Description>
+      </structure:Code>
+      <structure:Code value="045789" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">CHIEF MEDICAL LABORATORY SCIENTIST</structure:Description>
+      </structure:Code>
+      <structure:Code value="045896" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PMTCT MANAGER</structure:Description>
+      </structure:Code>
+      <structure:Code value="045940" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">ASSISTANT LIBRARIAN</structure:Description>
+      </structure:Code>
+      <structure:Code value="045941" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">LIBRARIAN (DIPLOMA)</structure:Description>
+      </structure:Code>
+      <structure:Code value="046982" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">INTERNAL AUDITOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="046983" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">CHIEF INTERNAL AUDIT</structure:Description>
+      </structure:Code>
+      <structure:Code value="047567" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">CHIEF RADIOGRAPHER</structure:Description>
+      </structure:Code>
+      <structure:Code value="047852" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">CHIEF PHYSICIST</structure:Description>
+      </structure:Code>
+      <structure:Code value="047871" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SNR CLINICAL PSYCHOLOGIST</structure:Description>
+      </structure:Code>
+      <structure:Code value="047875" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">CLINICAL PSYCHOLOGIST/ SENIOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="047937" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DIRECTOR OF FINANCE</structure:Description>
+      </structure:Code>
+      <structure:Code value="047938" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DEPUTY DIRECTOR BLAIR RESEARCH</structure:Description>
+      </structure:Code>
+      <structure:Code value="047998" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DISTRICT MEDICAL OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="048000" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">GOVERNMENT MEDICAL OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="048028" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">GOVERNMENT ANALYST</structure:Description>
+      </structure:Code>
+      <structure:Code value="048032" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DEPUTY GOVERNMENT ANALYST</structure:Description>
+      </structure:Code>
+      <structure:Code value="048060" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DEPUTY DIRECTOR DISEASE PREVENTION CONTROL</structure:Description>
+      </structure:Code>
+      <structure:Code value="048062" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">GOVERNMENT DENTAL OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="048070" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SENIOR GOVERNMENT DENTAL OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="048074" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DIRECTOR ORAL HEALTH SERVICES</structure:Description>
+      </structure:Code>
+      <structure:Code value="048131" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">MEDICAL SPECIALIST</structure:Description>
+      </structure:Code>
+      <structure:Code value="048132" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">MEDICAL SUP II-MEDICAL SPECIALIST PERSONAL</structure:Description>
+      </structure:Code>
+      <structure:Code value="048152" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">HARDWARE MAINTENANCE MANAGER</structure:Description>
+      </structure:Code>
+      <structure:Code value="048156" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">HOSPITAL MEDICAL OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="048157" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SENIOR HOUSE OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="048284" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">MEDICAL OFFICER OF HEALTH</structure:Description>
+      </structure:Code>
+      <structure:Code value="048287" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DIRECTOR TECHNICAL SUPPORT</structure:Description>
+      </structure:Code>
+      <structure:Code value="048288" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PROVINCIAL MEDICAL DIRECTOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="048301" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">MEDICAL PYSCHIATRIC SOCIAL WORKER</structure:Description>
+      </structure:Code>
+      <structure:Code value="048318" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">MEDICAL RESEARCH OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="048352" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">MEDICAL SUPERINTENDENT</structure:Description>
+      </structure:Code>
+      <structure:Code value="048393" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PHARMACIST</structure:Description>
+      </structure:Code>
+      <structure:Code value="048398" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">CHIEF PHARMACIST</structure:Description>
+      </structure:Code>
+      <structure:Code value="048440" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PHYSICIST/ CHIEF</structure:Description>
+      </structure:Code>
+      <structure:Code value="048482" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">JUNIOR REGISTRAR</structure:Description>
+      </structure:Code>
+      <structure:Code value="048490" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SENIOR REGISTRAR</structure:Description>
+      </structure:Code>
+      <structure:Code value="05" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">CHIEF ENGINEER</structure:Description>
+      </structure:Code>
+      <structure:Code value="050258" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">ANALYTICAL CHEMIST</structure:Description>
+      </structure:Code>
+      <structure:Code value="055687" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">ASSISTANT ARTISANS</structure:Description>
+      </structure:Code>
+      <structure:Code value="056610" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">ARTIST </structure:Description>
+      </structure:Code>
+      <structure:Code value="056650" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DENTAL TECHNICIAN</structure:Description>
+      </structure:Code>
+      <structure:Code value="056660" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DENTAL TECHNICIAN TRAINEE</structure:Description>
+      </structure:Code>
+      <structure:Code value="056666" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DENTAL THERAPIST</structure:Description>
+      </structure:Code>
+      <structure:Code value="056670" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DENTAL THERAPIST TRAINEE</structure:Description>
+      </structure:Code>
+      <structure:Code value="056680" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DOMESTIC SERVICES MANAGER</structure:Description>
+      </structure:Code>
+      <structure:Code value="056697" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PC TECHNICIAN</structure:Description>
+      </structure:Code>
+      <structure:Code value="056698" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">TECHNICIAN</structure:Description>
+      </structure:Code>
+      <structure:Code value="056744" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">FIELD OFFICE SENIOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="056826" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">MEDICAL RECORDS OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="056830" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">MEDICAL RESEARCH OFFICER ASSISTANT</structure:Description>
+      </structure:Code>
+      <structure:Code value="056880" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">MEDICAL RECORDS OFFICER ASSISTANT</structure:Description>
+      </structure:Code>
+      <structure:Code value="056883" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">CHIEF ORTHOPAEDIC TECHNOLOGIST</structure:Description>
+      </structure:Code>
+      <structure:Code value="056896" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">ORTHOPAEDIC TECHNOLOGIST- (DIPLOMA)</structure:Description>
+      </structure:Code>
+      <structure:Code value="058741" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SHOPFITTER</structure:Description>
+      </structure:Code>
+      <structure:Code value="0589417" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DIRECTOR OF OPERATIONS</structure:Description>
+      </structure:Code>
+      <structure:Code value="06" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DIRECTOR ENVIRONMENTAL HEALTH</structure:Description>
+      </structure:Code>
+      <structure:Code value="060206" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">STORES OFFICER 2</structure:Description>
+      </structure:Code>
+      <structure:Code value="063789" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">CARETAKER / GROUNDSMAN</structure:Description>
+      </structure:Code>
+      <structure:Code value="064589" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">MAINTENANCE OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="064743" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">FARM MANAGER II</structure:Description>
+      </structure:Code>
+      <structure:Code value="066583" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">TECHNICAL ASSISTANT (LABORATORY)</structure:Description>
+      </structure:Code>
+      <structure:Code value="067456" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">TRAINEE RADIOGRAPHER</structure:Description>
+      </structure:Code>
+      <structure:Code value="067460" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">RADIOGRAPHER</structure:Description>
+      </structure:Code>
+      <structure:Code value="067875" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">ENVIRONMENTAL HEALTH OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="067912" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">ENVIRONMENTAL HEALTH OFFICER TRAINEE</structure:Description>
+      </structure:Code>
+      <structure:Code value="067992" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">CHIEF HOSPITAL TECHNOLOGIST-HIGHER</structure:Description>
+      </structure:Code>
+      <structure:Code value="067994" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">HOSPITAL EQUIPMENT TECHINICIAN /SENIOR/HIGHER</structure:Description>
+      </structure:Code>
+      <structure:Code value="068070" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">MEDICAL LABORATORY TECHNOLOGIST/SENIOR/PRINCIPAL</structure:Description>
+      </structure:Code>
+      <structure:Code value="068080" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">MEDICAL LABORATORY TECHNOLOGIST ( GRADUATE)</structure:Description>
+      </structure:Code>
+      <structure:Code value="068092" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">CHIEF MEDICAL LABORATORY TECHNOLOGIST</structure:Description>
+      </structure:Code>
+      <structure:Code value="068115" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">TRAINEE MED/ VET LAB. TECHNOLOGIST(NON GRADUTE)</structure:Description>
+      </structure:Code>
+      <structure:Code value="068195" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SCIENTIFIC LABORATORY TECHNICIAN</structure:Description>
+      </structure:Code>
+      <structure:Code value="068202" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">CHIEF SCIENTIFIC MEDICAL LABORATORY TECHNCIAN</structure:Description>
+      </structure:Code>
+      <structure:Code value="068208" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">MEDICAL LABORATORY SCIENTIST/ TECHNICIAN</structure:Description>
+      </structure:Code>
+      <structure:Code value="068212" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SCIENTIFIC LABORATORY TECHNICIAN TRAINEE</structure:Description>
+      </structure:Code>
+      <structure:Code value="069780" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PHARMACEUTICAL TECHNICIAN</structure:Description>
+      </structure:Code>
+      <structure:Code value="069788" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PHARMACEUTICAL TECHNICIAN TRAINEE</structure:Description>
+      </structure:Code>
+      <structure:Code value="069852" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PAINTER</structure:Description>
+      </structure:Code>
+      <structure:Code value="07" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DIRECTOR EPIDEMIOLOGY AND DISEASE CONTROL</structure:Description>
+      </structure:Code>
+      <structure:Code value="073410" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">MEDICAL SECRETARY</structure:Description>
+      </structure:Code>
+      <structure:Code value="073515" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PHYSIOTHERAPIST</structure:Description>
+      </structure:Code>
+      <structure:Code value="073658" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SENIOR CLINICAL NURSING OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="073726" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">CHIEF DIETICIAN (DIRECTOR OF NUTRITION0</structure:Description>
+      </structure:Code>
+      <structure:Code value="073736" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">MEDICAL HEALTH SERVICES COORDINATOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="073747" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">REPRODUCTIVE HEALTH COORDINATOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="073753" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">MANAGER ( EPI)</structure:Description>
+      </structure:Code>
+      <structure:Code value="073757" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">STI/AIDS PREVENTION OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="073763" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">NON COMMUNICABLE DISEASE CONTROL OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="073764" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">NUTRITION INTERVENTION OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="073770" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">RAPID DISEASE EPI SURVELLIANCE MANAGER</structure:Description>
+      </structure:Code>
+      <structure:Code value="073786" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">HEALTH INFORMATION ASSISTANT</structure:Description>
+      </structure:Code>
+      <structure:Code value="073792" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">INTERGRATED MANAGEMENT OF CHILD ILLNESS OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="073801" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">EEG/ECG TECHNICIAN</structure:Description>
+      </structure:Code>
+      <structure:Code value="073821" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">EEG/ECG TECHNICIAN TRAINEE</structure:Description>
+      </structure:Code>
+      <structure:Code value="073864" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PRINCIPAL ENVIRONMENTAL HEALTH TECHINICIAN</structure:Description>
+      </structure:Code>
+      <structure:Code value="073906" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">HEALTH INFORMATION OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="073908" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">HEALTH PROMOTION OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="073930" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PUBLIC RELATIONS OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="073973" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">MATRON 111 ( THEATRE/ANAESTHETICS)</structure:Description>
+      </structure:Code>
+      <structure:Code value="074018" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">REHAB TECHNICIAN/ SENIOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="074025" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PRINCIPAL STATE CERTIFIED NURSE</structure:Description>
+      </structure:Code>
+      <structure:Code value="074122" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PRIMARY HEALTH CARE  NURSE</structure:Description>
+      </structure:Code>
+      <structure:Code value="074125" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">STUDENT NURSE</structure:Description>
+      </structure:Code>
+      <structure:Code value="074127" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">TRAINEE PRIMARY CARE NURSE</structure:Description>
+      </structure:Code>
+      <structure:Code value="074162" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">CHIEF BUYER</structure:Description>
+      </structure:Code>
+      <structure:Code value="074376" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PRINCIPAL NURSING OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="074410" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PRINCIPAL TUTOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="074416" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">NURSING TUTOR/SENIOR/PRINCIPAL</structure:Description>
+      </structure:Code>
+      <structure:Code value="074440" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">ASSISTANT NUTRITIONIST</structure:Description>
+      </structure:Code>
+      <structure:Code value="074452" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SPEECH / OCCUPATIONAL THERAPIST</structure:Description>
+      </structure:Code>
+      <structure:Code value="074488" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PRINCIPAL PHYSIOTHERAPIST</structure:Description>
+      </structure:Code>
+      <structure:Code value="074577" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">CHIEF THERAPIST</structure:Description>
+      </structure:Code>
+      <structure:Code value="074589" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SENIOR WARD DOMESTIC SERVICES SUPERVISOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="074605" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SISTER GENERAL/ SENIOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="074606" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SENIOR SISTER</structure:Description>
+      </structure:Code>
+      <structure:Code value="074613" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SISTER GENERAL GRADUATE / THEATRE ANAESTHETICS</structure:Description>
+      </structure:Code>
+      <structure:Code value="074635" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SISTER IN CHARGE</structure:Description>
+      </structure:Code>
+      <structure:Code value="074636" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SISTER IN CHARGE THEATRE ANAESTHETICS</structure:Description>
+      </structure:Code>
+      <structure:Code value="074637" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">CLINICAL INSTRUCTOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="074896" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">HOSPITAL FOOD SERVICES SUPERVISOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="077560" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PATHOLOGIST</structure:Description>
+      </structure:Code>
+      <structure:Code value="08" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DIRECTOR FAMILY HEALTH</structure:Description>
+      </structure:Code>
+      <structure:Code value="088745" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SENIOR RESIDENT MEDICAL OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="09" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DIRECTOR FINANCE AND ADMINSTRATION</structure:Description>
+      </structure:Code>
+      <structure:Code value="0987410" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">QUALITY ASSURANCE  OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="10" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DIRECTOR HIV, AIDS, STI AND TB</structure:Description>
+      </structure:Code>
+      <structure:Code value="100" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">RADIATION PROTECTION OFFICER/SENIOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="100000" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">ENVIRONMENTAL HEALTH TECHNICIAN</structure:Description>
+      </structure:Code>
+      <structure:Code value="10012" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DENTAL TECHNICIAN TUTOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="100536" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">RECORDS  AND INFORMATION SUPERVISOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="102589" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">ORTHOPAEDIC TECHNOLOGIST ASSISTANT CHIEF</structure:Description>
+      </structure:Code>
+      <structure:Code value="11" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DIRECTOR HUMAN RESOURCES</structure:Description>
+      </structure:Code>
+      <structure:Code value="110200" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">HEAD / CHEF</structure:Description>
+      </structure:Code>
+      <structure:Code value="110650" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">LINEN SUPERVISOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="1111" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">OCCUPATIONAL THERAPY TRAINER</structure:Description>
+      </structure:Code>
+      <structure:Code value="111101" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">STORES ASSISTANT 1</structure:Description>
+      </structure:Code>
+      <structure:Code value="1111111" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">MEDICAL OFFICER OF HEALTH (EPID-DISEASE CONTROL)</structure:Description>
+      </structure:Code>
+      <structure:Code value="1111113" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PROVINCIAL HIV /AIDS/STI/TB OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="1111114" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PROVINCIAL MALARIA /EPIDEMIC DISEASES CONTROL OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="111112" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">MEDICAL OFFICER OF HEALTH (MATERNAL &amp; CHILD HEALTH)</structure:Description>
+      </structure:Code>
+      <structure:Code value="111115" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PROVINCIAL HEALTH INFORMATION OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="111116" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PROVINCIAL PHARMACIST</structure:Description>
+      </structure:Code>
+      <structure:Code value="111117" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PROVINCIAL HEALTH INFORMATION ASSISTANT</structure:Description>
+      </structure:Code>
+      <structure:Code value="111118" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PROVINCIAL NUTRITIONIST</structure:Description>
+      </structure:Code>
+      <structure:Code value="111119" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PROVINCIAL ENVIRONMENTAL HEALTH OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="111120" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PROVINCIAL NURSING OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="111122" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PRINCIPAL ENVIRONMENTAL HEALTH OFFICER (DIPLOMA)</structure:Description>
+      </structure:Code>
+      <structure:Code value="111123" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PROVINCIAL PRIMARY CARE OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="111124" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PROVINCIAL CHILD CARE OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="111125" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PROVINCILA CHILD WELFARE OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="111126" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PROVINCIAL HEALTH SERVICES ADMINISTRATOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="111127" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">TRAINEE ENVIRONMENTAL HEALTH OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="111129" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PROVINCIAL TB COORDINATOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="11117" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">HOSPITAL EQUIPMENT TECHNICIAN ASSISTANT CHIEF</structure:Description>
+      </structure:Code>
+      <structure:Code value="1114" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DUPLICATION OPERATOR/SENIOER</structure:Description>
+      </structure:Code>
+      <structure:Code value="111550" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">CRECHE SUPERVISOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="1116" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">INTERGRATED MANAGEMENT OF CHILDHOOD ILLNESS MANAGER</structure:Description>
+      </structure:Code>
+      <structure:Code value="111713" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">HAND MAN</structure:Description>
+      </structure:Code>
+      <structure:Code value="111880" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">ORDERLY STEWARD 11</structure:Description>
+      </structure:Code>
+      <structure:Code value="112261" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">TAILOR 1/II</structure:Description>
+      </structure:Code>
+      <structure:Code value="112760" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DENTAL SURGERY ASSISTANT</structure:Description>
+      </structure:Code>
+      <structure:Code value="112832" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">INSTITUTIONAL DOMESTIC SUPERVISOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="112982" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">HOUSE KEEPER</structure:Description>
+      </structure:Code>
+      <structure:Code value="113300" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PACKER,CSSD,SENIOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="113471" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SENIOR STORES ASSISTANT</structure:Description>
+      </structure:Code>
+      <structure:Code value="113650" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">THEATRE DISPOSAL SUPERVISOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="113850" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">ASSISTANT CATERING SUPERVISOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="113960" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">LAUNDRY SUPERINTENDEND ASSISTANT</structure:Description>
+      </structure:Code>
+      <structure:Code value="114100" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">CLEANING SURPERVISOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="114300" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">LADY WARDEN</structure:Description>
+      </structure:Code>
+      <structure:Code value="114320" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">LINEN ROOM CONTROLLER 2</structure:Description>
+      </structure:Code>
+      <structure:Code value="114763" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">STOREMAN</structure:Description>
+      </structure:Code>
+      <structure:Code value="114940" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">WARD DOMESTIC SUPERVISOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="115700" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">OCCUPATIONAL THERAPIST</structure:Description>
+      </structure:Code>
+      <structure:Code value="116050" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SUPERVISOR(HEALTH)</structure:Description>
+      </structure:Code>
+      <structure:Code value="116052" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">MORTUARY SUPERVISOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="116081" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SUPERVISOR 1</structure:Description>
+      </structure:Code>
+      <structure:Code value="116411" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">BLOCKMAN</structure:Description>
+      </structure:Code>
+      <structure:Code value="116850" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">LAUNDRY SUPERITENTENDENT 1</structure:Description>
+      </structure:Code>
+      <structure:Code value="118400" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">STEWARD /SECURITY</structure:Description>
+      </structure:Code>
+      <structure:Code value="119000" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">CATERING  MANAGER /SUPERINTENDENT</structure:Description>
+      </structure:Code>
+      <structure:Code value="119500" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">LAUNDRY MANAGER</structure:Description>
+      </structure:Code>
+      <structure:Code value="12" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DIRECTOR NURSING SERVICES</structure:Description>
+      </structure:Code>
+      <structure:Code value="1200" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DISTRICT NURSING OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="120488" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">COOK</structure:Description>
+      </structure:Code>
+      <structure:Code value="120950" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">LINEN CHECKER</structure:Description>
+      </structure:Code>
+      <structure:Code value="121025" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">MORTUARY ATTENDANT 11</structure:Description>
+      </structure:Code>
+      <structure:Code value="12120" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">MEDICAL LABORATORY TECHNCIAN</structure:Description>
+      </structure:Code>
+      <structure:Code value="121300" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SEWING SUPERVISOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="121551" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">TECHNICAL ASSISTANT 1</structure:Description>
+      </structure:Code>
+      <structure:Code value="121700" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">XRAY OPERATOR TRAINEE</structure:Description>
+      </structure:Code>
+      <structure:Code value="122" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">COMISSIONING OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="122360" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DISPENSARY ASSISTANT</structure:Description>
+      </structure:Code>
+      <structure:Code value="122600" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">FIELD SUPERVISOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="12345" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">EMERGENCY PREPAREDNESS MANAGER</structure:Description>
+      </structure:Code>
+      <structure:Code value="123662" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">STORES ASSISTANT 11</structure:Description>
+      </structure:Code>
+      <structure:Code value="123698" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DEPUTY CHIEF PATHOLOGIST</structure:Description>
+      </structure:Code>
+      <structure:Code value="125023" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">LABORATORY HAND</structure:Description>
+      </structure:Code>
+      <structure:Code value="125150" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">MORTUARY ATTENDANT 1</structure:Description>
+      </structure:Code>
+      <structure:Code value="126304" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DRIVER</structure:Description>
+      </structure:Code>
+      <structure:Code value="126750" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">LEPROSY SCOUT</structure:Description>
+      </structure:Code>
+      <structure:Code value="128" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">HOSTEL WARDEN</structure:Description>
+      </structure:Code>
+      <structure:Code value="128273" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">CATERING  SUPERVISOR  </structure:Description>
+      </structure:Code>
+      <structure:Code value="128400" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">CSSD PACKER/ SENIOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="128700" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">HOSPITAL EQUIPMENT REPAIRER</structure:Description>
+      </structure:Code>
+      <structure:Code value="129300" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SEAMSTRESS</structure:Description>
+      </structure:Code>
+      <structure:Code value="129400" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SENIOR FIELD SUPERVISOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="129572" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">LABORATORY HANDY SENIOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="129700" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">TRAINEE IDS</structure:Description>
+      </structure:Code>
+      <structure:Code value="13" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DIRECTOR PERFORMANCE MANAGEMENT</structure:Description>
+      </structure:Code>
+      <structure:Code value="131300" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">LAUNDRY HAND</structure:Description>
+      </structure:Code>
+      <structure:Code value="131752" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">OFFICE ORDERLY</structure:Description>
+      </structure:Code>
+      <structure:Code value="132102" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">STORES HAND</structure:Description>
+      </structure:Code>
+      <structure:Code value="132250" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">TRAINEE ENVERONMENTAL HEALTH TECHNICIAN</structure:Description>
+      </structure:Code>
+      <structure:Code value="132300" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">REHABILITATION ASSISTANT TRAINEE</structure:Description>
+      </structure:Code>
+      <structure:Code value="132421" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">WAITER</structure:Description>
+      </structure:Code>
+      <structure:Code value="133200" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">GENERAL HAND</structure:Description>
+      </structure:Code>
+      <structure:Code value="133202" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">HOSPITAL HAND</structure:Description>
+      </structure:Code>
+      <structure:Code value="133230" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">HOSPITAL SECURITY GUARD</structure:Description>
+      </structure:Code>
+      <structure:Code value="134203" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SECURITY GUARD</structure:Description>
+      </structure:Code>
+      <structure:Code value="135" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PERSONAL ASSISTANT TO MINISTER</structure:Description>
+      </structure:Code>
+      <structure:Code value="135752" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">FIELD ORDERLY</structure:Description>
+      </structure:Code>
+      <structure:Code value="136450" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">MORTUARY ATTENDANT 111</structure:Description>
+      </structure:Code>
+      <structure:Code value="137" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PROCUREMENT OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="137103" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SENIOR HAND </structure:Description>
+      </structure:Code>
+      <structure:Code value="137172" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SENIOR OFFICE ORDERLY</structure:Description>
+      </structure:Code>
+      <structure:Code value="137220" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SEWING ASSISTANT (PERSONAL TO HOLDER)</structure:Description>
+      </structure:Code>
+      <structure:Code value="137223" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SEWING ASSISTANT</structure:Description>
+      </structure:Code>
+      <structure:Code value="137400" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">TRAINEE STATE CERT. LAB. ASSISTANT</structure:Description>
+      </structure:Code>
+      <structure:Code value="137630" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SUPERVISOR ASSISTANT </structure:Description>
+      </structure:Code>
+      <structure:Code value="137720" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">BUTCHERY HAND</structure:Description>
+      </structure:Code>
+      <structure:Code value="137860" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DARKROOM ASSISTANT</structure:Description>
+      </structure:Code>
+      <structure:Code value="138181" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">HEALTH ORDERLY</structure:Description>
+      </structure:Code>
+      <structure:Code value="138403" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">LABORATORY HAND 11</structure:Description>
+      </structure:Code>
+      <structure:Code value="138550" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">NURSE AID</structure:Description>
+      </structure:Code>
+      <structure:Code value="138600" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">ORTHOPAEDIC ASSISTANT 11</structure:Description>
+      </structure:Code>
+      <structure:Code value="138854" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">COPYING/DUPLICATING OPERATOR SENIOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="139251" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">STORES ASSISTANT 111</structure:Description>
+      </structure:Code>
+      <structure:Code value="139752" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">WORKSHOP HAND</structure:Description>
+      </structure:Code>
+      <structure:Code value="139900" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">XRAY ATTENDANT</structure:Description>
+      </structure:Code>
+      <structure:Code value="14" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DIRECTOR PHARMACY SERVICES</structure:Description>
+      </structure:Code>
+      <structure:Code value="15" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DIRECTOR POLICY AND PLANNING</structure:Description>
+      </structure:Code>
+      <structure:Code value="16" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DIRECTOR QUALITY ASSURANCE</structure:Description>
+      </structure:Code>
+      <structure:Code value="17" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DIRECTOR TRADITIONAL MEDICINE</structure:Description>
+      </structure:Code>
+      <structure:Code value="18" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DEPUTY DIRECTOR NURSE TRAINING AND ADMINISTRATION</structure:Description>
+      </structure:Code>
+      <structure:Code value="19" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">WATER SANITATION AND WASTE MANAGEMENT COORDINATOR </structure:Description>
+      </structure:Code>
+      <structure:Code value="20" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">FOOD SAFETY AND PORT HEALTH COORDINATOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="20202" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">ENVIRONMENTAL TECHNCIAN</structure:Description>
+      </structure:Code>
+      <structure:Code value="21" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">WATER AND SANITATION MANAGER/WASTE  MANAGER</structure:Description>
+      </structure:Code>
+      <structure:Code value="21210" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SCIENTIFIC LABORATORY TECHNCIAN</structure:Description>
+      </structure:Code>
+      <structure:Code value="22" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PORT HEALTH MANAGER/FOOD SAFETY MANAGER</structure:Description>
+      </structure:Code>
+      <structure:Code value="22233" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DIRECTOR GOVERNMENT ANALYST</structure:Description>
+      </structure:Code>
+      <structure:Code value="22255" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DEPUTY DIRECTOR GOVERNMENT ANALYST/FOOD CONTROL</structure:Description>
+      </structure:Code>
+      <structure:Code value="23" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">CHIEF RADIATION PROTECTION OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="23233" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">CHIEF FIELD SUPERVISOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="24" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PHARMACY LOGISTICS AND RESEARCH COORDINATOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="25" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PHARMACY LOGISTICS AND RESEARCH OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="256123" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">MATRON II</structure:Description>
+      </structure:Code>
+      <structure:Code value="26" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PHARMACIST SENIOR/PRINCIPAL (TRAINING OFFICER)</structure:Description>
+      </structure:Code>
+      <structure:Code value="27" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PHARMACY CADET</structure:Description>
+      </structure:Code>
+      <structure:Code value="28" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">TRAINEE PHARMACY TECHNICIAN</structure:Description>
+      </structure:Code>
+      <structure:Code value="29" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DEPUTY DIRECTOR NUTRITION</structure:Description>
+      </structure:Code>
+      <structure:Code value="30" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">NUTRITION INTERVENTION MANAGER</structure:Description>
+      </structure:Code>
+      <structure:Code value="300003" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">HEALTH TRAINING OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="300005" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">STATE CERTIFIED MEDICAL LABORATORY TECHNICIAN/SNR TRAINEE</structure:Description>
+      </structure:Code>
+      <structure:Code value="300007" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">ORTHOPEADIC ASSISTANT</structure:Description>
+      </structure:Code>
+      <structure:Code value="300008" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PROVINCIAL EPI OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="300009" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PROVINCIAL EPIDEMIOLOGY/DISEASE CONTROL OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="300010" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PROVINCIAL HEALTH PROMOTION OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="300015" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DIRECTOR BLAIR RESEARCH</structure:Description>
+      </structure:Code>
+      <structure:Code value="300018" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PRINCIPAL MEDICAL RESEARCH OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="300019" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">EXECUTIVE ASSISTANT/SENIOR/PRINCIPAL</structure:Description>
+      </structure:Code>
+      <structure:Code value="300020" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">TRAINEE MIDWIVES</structure:Description>
+      </structure:Code>
+      <structure:Code value="300021" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SENIOR FIELD ORDERLY</structure:Description>
+      </structure:Code>
+      <structure:Code value="300022" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DENTAL THERAPY TUTOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="300024" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PHYSIOTHERAPY /OCCUPATIONAL/TUTOR/SENIOR/PRINCIPAL</structure:Description>
+      </structure:Code>
+      <structure:Code value="300025" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SENIOR REHABILITATION TECHNICIAN</structure:Description>
+      </structure:Code>
+      <structure:Code value="300026" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">REHABILITATION  TECH  TUTOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="300030" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">COXSWAIN</structure:Description>
+      </structure:Code>
+      <structure:Code value="300031" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DISTRICT ENVIRONMENTAL HEALTH OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="3036" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">EXECUTIVE OFFICER OF HEALTH</structure:Description>
+      </structure:Code>
+      <structure:Code value="31" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">NUTRITION EMERGENCY PREPAREDNESS AND SURVEILLANCE MANAGER</structure:Description>
+      </structure:Code>
+      <structure:Code value="32" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">NUTRITIONIST SENIOR/PRINCIPAL (TRAINING OFFICER)</structure:Description>
+      </structure:Code>
+      <structure:Code value="33" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">NUTRITION LOGISTICS OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="336651" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SYSTEMS ADMINISTRATOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="34" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">TRAINEE INSTITUTIONAL DOMESTIC SUPERVISOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="35" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">TB REFERENCE LABORATORY SERVICES COORDINATOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="36" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">MICROBIOLOGY REFERENCE LABORATORY SERVICES COORDINATOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="369521" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">MEDICAL SOCIAL WORKER</structure:Description>
+      </structure:Code>
+      <structure:Code value="369852" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">CHIEF ACCOUNTANT</structure:Description>
+      </structure:Code>
+      <structure:Code value="37" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">CLINICAL LABORATORY SERVICES COORDINATOR </structure:Description>
+      </structure:Code>
+      <structure:Code value="38" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">TRADITIONAL MEDICINE POLICY AND PRACTICE CONTROL COORDINATOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="39" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">TRADITIONAL MEDICINE RESEARCH AND INFORMATION COORDINATOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="40" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">HEALTH PROMOTION COORDINATOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="41" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">HEALTH PROMOTION MANAGER</structure:Description>
+      </structure:Code>
+      <structure:Code value="42" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">GRAPHIC ARTIST</structure:Description>
+      </structure:Code>
+      <structure:Code value="43" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">HEALTH INFORMATION AND SURVEILLANCE COORDINATOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="44" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SURVEILLANCE MANAGER</structure:Description>
+      </structure:Code>
+      <structure:Code value="45" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">HIV AND AIDS STI AND TB SURVEILLANCE</structure:Description>
+      </structure:Code>
+      <structure:Code value="46" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">HEALTH INFORMATION MANAGER</structure:Description>
+      </structure:Code>
+      <structure:Code value="47" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">HEALTH SURVEILLANCE OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="48" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SURVEILLANCE ASSISTANT </structure:Description>
+      </structure:Code>
+      <structure:Code value="49" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DEPUTY DIRECTOR HOSPITAL PLANNING AND PROJECT MANAGEMENT</structure:Description>
+      </structure:Code>
+      <structure:Code value="50" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">HOSPITAL EQUIPMENT MANAGER</structure:Description>
+      </structure:Code>
+      <structure:Code value="51" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">HOSPITAL PLANNING MANAGER(ENGINEER)</structure:Description>
+      </structure:Code>
+      <structure:Code value="52" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">FACILITIES PLANNING ADMINISTRATIVE OFFICER SENIOR/PRINCIPAL</structure:Description>
+      </structure:Code>
+      <structure:Code value="524163" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">COMPUTER TECHNICIAN</structure:Description>
+      </structure:Code>
+      <structure:Code value="525236" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">OFFICE ORDERLIES</structure:Description>
+      </structure:Code>
+      <structure:Code value="53" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">INFRASTRUCTURE MAINTENANCE OFFICER(ADMINISTRATIVE OFFICER)</structure:Description>
+      </structure:Code>
+      <structure:Code value="54" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">QUALITY ASSURANCE COORDINATOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="55" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PERFORMANCE MONITORING AND EVALUATION</structure:Description>
+      </structure:Code>
+      <structure:Code value="55588" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DIETICIAN</structure:Description>
+      </structure:Code>
+      <structure:Code value="56" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DEPUTY DIRECTOR POLICY AND PLANNING</structure:Description>
+      </structure:Code>
+      <structure:Code value="56565" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DEPUTY DIRECTOR GOVERNMENT ANALYST/ADMIN,TOXI, CLINICAL</structure:Description>
+      </structure:Code>
+      <structure:Code value="57" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">LEGISLATION OFFICER SENIOR/PRINCIPAL</structure:Description>
+      </structure:Code>
+      <structure:Code value="58" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">STRATEGY AND POLICY DEVELOPMENT OFFICER SENIOR PRINCIPAL</structure:Description>
+      </structure:Code>
+      <structure:Code value="59" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PLANNING AND DONOR COORDINATION OFFICER SENIOR PRINCIPAL</structure:Description>
+      </structure:Code>
+      <structure:Code value="60" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DEPUTY DIRECTOR HUMAN RESOURCES</structure:Description>
+      </structure:Code>
+      <structure:Code value="62" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">HUMAN RESOURCES OFFICER SENIOR/PRINCIPAL</structure:Description>
+      </structure:Code>
+      <structure:Code value="63" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PRINCIPAL EXECUTIVE ASSISTANT</structure:Description>
+      </structure:Code>
+      <structure:Code value="64" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">LIBRARIAN SENIOR/PRINCIPAL</structure:Description>
+      </structure:Code>
+      <structure:Code value="65" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">AUDITOR /SENIOR/ PRINCIPAL</structure:Description>
+      </structure:Code>
+      <structure:Code value="66" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">ACCOUNTANT SENIOR/ PRINCIPAL</structure:Description>
+      </structure:Code>
+      <structure:Code value="665214" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">CARPENTER (I/II/III)</structure:Description>
+      </structure:Code>
+      <structure:Code value="669810" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">RECORDS AND INFORMATION ASSISTANT</structure:Description>
+      </structure:Code>
+      <structure:Code value="669852" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">ORTHOPAEDIC ASSISTANT FITTER/ SEC</structure:Description>
+      </structure:Code>
+      <structure:Code value="67" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">INFORMATION TECHNOLOGY COORDINATOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="68" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SOFTWARE PROGRAMME ANALYST</structure:Description>
+      </structure:Code>
+      <structure:Code value="69" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">GIS TECHNICIAN</structure:Description>
+      </structure:Code>
+      <structure:Code value="693258" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">MORTUARY HANDS</structure:Description>
+      </structure:Code>
+      <structure:Code value="70" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DEPUTY DIRECTOR ADMINSTRATION</structure:Description>
+      </structure:Code>
+      <structure:Code value="71" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">LOGISTICS AND ADMINSTRATION OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="73" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">ADOLESCENT HEALTH SERVICES MANAGER</structure:Description>
+      </structure:Code>
+      <structure:Code value="74" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">REPRODUCTIVE HEALTH SERVICES MANAGER</structure:Description>
+      </structure:Code>
+      <structure:Code value="741996" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">LINEN CHEKER</structure:Description>
+      </structure:Code>
+      <structure:Code value="7489256" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">MANAGER INTERNAL AUDIT</structure:Description>
+      </structure:Code>
+      <structure:Code value="75" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">OCCUPATIONAL HEALTH AND INJURY COORDINATOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="76" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">OCCUPATIONAL HEALTH AND INJURY MANAGER</structure:Description>
+      </structure:Code>
+      <structure:Code value="77" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">MENTAL HEALTH DEPUTY DIRECTOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="78" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">MENTAL HEALTH SERVICES MANAGER</structure:Description>
+      </structure:Code>
+      <structure:Code value="789045" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PRIMARY HEALTH CARE WORKER TRAINER</structure:Description>
+      </structure:Code>
+      <structure:Code value="789625" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PHARMACY STORES CONTROLLER</structure:Description>
+      </structure:Code>
+      <structure:Code value="79" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DEPUTY DIRECTOR STI, HIV AND AIDS</structure:Description>
+      </structure:Code>
+      <structure:Code value="80" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DEPUTY DIRECTOR TB CONTROL</structure:Description>
+      </structure:Code>
+      <structure:Code value="8000" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">OPERATIONS MANAGER</structure:Description>
+      </structure:Code>
+      <structure:Code value="80000" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">CADET</structure:Description>
+      </structure:Code>
+      <structure:Code value="80001" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DEPUTY MINISTER</structure:Description>
+      </structure:Code>
+      <structure:Code value="80002" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">MINISTER</structure:Description>
+      </structure:Code>
+      <structure:Code value="80005" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">BOARD MEMBER</structure:Description>
+      </structure:Code>
+      <structure:Code value="80006" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">CHAIRMAN (HSB)</structure:Description>
+      </structure:Code>
+      <structure:Code value="8001" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PROVINCIAL THERAPIST</structure:Description>
+      </structure:Code>
+      <structure:Code value="81" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">COUNSELLING SERVICES MANAGER</structure:Description>
+      </structure:Code>
+      <structure:Code value="82" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">STI, HIV AND AIDS PREVENION CARE MANAGER </structure:Description>
+      </structure:Code>
+      <structure:Code value="83" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">CONDOM PROMOTION AND COMMUNICATION MANAGER</structure:Description>
+      </structure:Code>
+      <structure:Code value="84" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">TB CONTROL MANAGER</structure:Description>
+      </structure:Code>
+      <structure:Code value="85" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">LOGISTICS TB MANAGER</structure:Description>
+      </structure:Code>
+      <structure:Code value="86" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DEPUTY DIRECTOR COMMUNITY NURSING</structure:Description>
+      </structure:Code>
+      <structure:Code value="87" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DIRECTOR LABORATORY SERVICES</structure:Description>
+      </structure:Code>
+      <structure:Code value="885204" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">ASSISTANT SYSTEMS ADMINISTRATOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="885623" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">HOME WARDEN</structure:Description>
+      </structure:Code>
+      <structure:Code value="9000" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">ORTHOPAEDIC TECHNOLOGIST</structure:Description>
+      </structure:Code>
+      <structure:Code value="9001" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">EXPANDED PROGRAM FOR IMMUNISATION OFFICER</structure:Description>
+      </structure:Code>
+      <structure:Code value="9002" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">TB COODINATOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="90020" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">PSYCHIATRIC TRAINEE</structure:Description>
+      </structure:Code>
+      <structure:Code value="9050" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">HOSPITAL ENGINEER</structure:Description>
+      </structure:Code>
+      <structure:Code value="963525" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">CARPENTER</structure:Description>
+      </structure:Code>
+      <structure:Code value="965823" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">DATA CAPTURE SUPERVISOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="965834" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">CATERING ATTENDANT I/II</structure:Description>
+      </structure:Code>
+      <structure:Code value="985623" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">LINEN CONTROLLER I/II</structure:Description>
+      </structure:Code>
+      <structure:Code value="996541" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">ASSISTANT HOSTELS SUPERVISOR</structure:Description>
+      </structure:Code>
+      <structure:Code value="9985623" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=DHIS2:CL_POST[1.0]">
+        <structure:Description xml:lang="en">SENIOR TUTOR RADIOGRAPHY</structure:Description>
+      </structure:Code>
+    </structure:CodeList>
+    <structure:CodeList id="CL_FACILITY" agencyID="ZW_MOHCW" version="1.0" isFinal="false" urn="urn:sdmx:org.sdmx.infomodel.codelist=SDMX-HD:CL_FACILITY">
+      <structure:Name xml:lang="en">Facility</structure:Name>
+    </structure:CodeList>
+  </CodeLists>
+  <Concepts>
+    <structure:Concept id="FACILITY" agencyID="ZW_MOHCW" version="1.0">
+      <structure:Name xml:lang="en">FACILITY</structure:Name>
+    </structure:Concept>
+    <structure:Concept id="POST" agencyID="ZW_MOHCW" version="1.0">
+      <structure:Name xml:lang="en">JOB</structure:Name>
+    </structure:Concept>
+  </Concepts>
+  <KeyFamilies>
+    <structure:KeyFamily id="KF_HW_POST_FAC" agencyID="ZW_MOHCW" version="1.0" isFinal="false">
+      <structure:Name xml:lang="en">KeyFamily For health workers by post and facility</structure:Name>
+      <structure:Description xml:lang="en"/>
+      <structure:Components>
+        <structure:Dimension crossSectionalAttachGroup="true" conceptRef="FREQ" conceptSchemeRef="CS_COMMON" conceptVersion="1.0" conceptSchemeAgency="SDMX-HD" codelist="CL_FREQ" codelistVersion="1.0" codelistAgency="SDMX-HD" isFrequencyDimension="true"/>
+        <structure:Dimension crossSectionalAttachObservation="true" conceptRef="DATAELEMENT" conceptSchemeRef="CS_COMMON" conceptVersion="1.0" conceptSchemeAgency="SDMX-HD" codelist="CL_POST" codelistVersion="1.0" codelistAgency="ZW_MOHCW"/>
+        <structure:Dimension crossSectionalAttachObservation="true" crossSectionalAttachGroup="true" conceptRef="FACILITY" conceptSchemeRef="CS_DIMENSION" conceptVersion="1.0" conceptSchemeAgency="ZW_MOHCW" codelist="CL_FACILITY" codelistVersion="1.0" codelistAgency="ZW_MOHCW"/>
+        <structure:Dimension crossSectionalAttachObservation="true" crossSectionalAttachGroup="true" conceptRef="VALUE_TYPE" conceptSchemeRef="CS_COMMON" conceptVersion="1.0" conceptSchemeAgency="SDMX-HD" codelist="CL_VALUE_TYPE" codelistVersion="1.0" codelistAgency="SDMX-HD"/>
+        <structure:TimeDimension crossSectionalAttachGroup="true" conceptRef="TIME_PERIOD" conceptSchemeRef="CS_COMMON" conceptVersion="1.0" conceptSchemeAgency="SDMX-HD">
+          <structure:TextFormat textType="ObservationalTimePeriod"/>
+        </structure:TimeDimension>
+        <structure:PrimaryMeasure conceptRef="OBS_VALUE" conceptSchemeRef="CS_COMMON" conceptVersion="1.0" conceptSchemeAgency="SDMX-HD">
+          <structure:TextFormat textType="Decimal"/>
+        </structure:PrimaryMeasure>
+      </structure:Components>
+    </structure:KeyFamily>
+  </KeyFamilies>
+</Structure>

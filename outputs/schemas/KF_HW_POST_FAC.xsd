@@ -1,0 +1,2525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:common="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/common" xmlns:cross="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/cross" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:sdmx:org.sdmx.infomodel.keyfamily.KeyFamily=ZW_MOHCW:KF_HW_POST_FAC:1.0:cross" targetNamespace="urn:sdmx:org.sdmx.infomodel.keyfamily.KeyFamily=ZW_MOHCW:KF_HW_POST_FAC:1.0:cross" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xs:import namespace="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/cross" schemaLocation="SDMXCrossSectionalData.xsd"/>
+  <xs:import namespace="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/common" schemaLocation="SDMXCommon.xsd"/>
+  <xs:simpleType>
+    <xs:restriction base="xs:string" name="CL_FREQ">
+      <xs:enumeration value="A">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Annually</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="S">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Half-yearly, semester,biannual</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Q">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Quarterly</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="M">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Monthly</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="W">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Weekly</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="D">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Daily</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="B">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Daily - business week</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="N">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Minutely</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Z">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Biennially, every two years</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType>
+    <xs:restriction base="xs:string" name="CL_POST">
+      <xs:enumeration value="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DEPUTY DIRECTOR NON  COMMUNICABLE DISEASES</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="00">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DEPUTY DIRECTOR NON COMMUNICABLE DISEASES</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="00000">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">CUBAN MEDICAL PERSONAL</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="000003">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PORT HEALTH OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="000005">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SISTER IN CHARGE COMMUNITY</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="000006">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SISTER COMMUNITY</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="000007">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">CLINICAL NURSING OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="000008">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PORT HEALTH TECHNICIAN</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="000009">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">HEALTH SERVICES ADMINISTRATOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="000010">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">X-RAY OPERATOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="0001">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">EXECUTIVE DIRECTOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="0002">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DEPUTY DIRECTOR CONDITIONS OF SERVICE</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="0003">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DEPUTY DIRECTOR LEGAL AFFAIRS</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="0004">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DIRECTOR CONDITIONS OF SERVICE AND PUBLIC RELATIONS</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="0005">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DEPUTY DIRECTOR MANPOWER PLANNING AND DEVELOPMENT</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="0006">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SNR/ PRINCIPAL CONDITIONS OF SERVICE OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="0007">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">CHIEF CORPORATE SERVICE OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="0008">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">INFORMATION OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="0009">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">INFOMATION OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="001">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">TO DELETE</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="0010">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">CORPORATE SERVICE OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="0011">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DATA CAPTURE CLERK</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="0012">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">MACHINE OPERATOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="0013">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">EXECUTIVE SECRETARY</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="0014">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">RECEPTIONIST</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="0015">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">GROUNDSMAN</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="0016">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SNR/PRIN LEGAL OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="004750">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">MICROSCOPIST</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="01">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SECRETARY FOR HEALTH AND CHILD WELFARE</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="01110">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">MAXILLO FACIAL SURGEON</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="0112569">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">ELECTRICIAN</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="011519">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">ADMINISTRATIVE OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="012296">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">NURSE AIDE</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="012385">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PRINCIPAL TUTOR RADIOGRAPHY</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="01245">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DIRECTOR TRAINING SERVICES</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="012569">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">CHIEF EXECUTIVE OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="012589">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">ALLOCATIONS OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="014258">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">REGISTRY CLASSIFIER / CLERK</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="014523">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">STATE CERTIFIED NURSE</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="014566">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">ASSISTANT HEALTH INFORMATION OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="014567">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">BAKER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="014586">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">HOSPITAL EQUIPMENT ENGINEER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="014588">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PHARMACY TECHNICIAN</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="014589">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">CHARGE HAND</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="0145896">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">STUDENT RADIOGRAPHER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="014598">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PLUMBER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="014693">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">CHIEF HOSPITAL EQUIPMENT TECHNICIAN</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="014723">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">REGISTERED GENERAL NURSE /SENIOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="014725">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">TRAINEE ORTHO TECHNICIAN</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="0147366">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">HOSPITAL CLAIMS ASSESOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="014756">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">BUILDER / BRICKLAYER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="014759">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">ASSISTANT BUYER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="0147693">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SWITCH BOARD SUPERVISOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="014784">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">GARDENER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="014785">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">JUNIOR RESIDENT MEDICAL OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="0147852">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">STORES CONTROLLER( PHARMACY)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="0147889">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">WELDER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="014789">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SPECIALISTS / CONSULTANT</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="0147893">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">STATE CERTIFIED MEDICAL LABORATORY TRAINEE</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="014790">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">REGISTRARS SNR/JNR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="0147963">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">CATERING ATTENDANT</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="014963">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SECURITY OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="017369">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">ACCOUNTS CLERK</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="018348">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">MEDICAL SUPERITENDENT II</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="019844">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DIRECTOR OF CLINICAL SERVICES</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="02">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PRINCIPAL DIRECTOR CURATIVE</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="020001">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">THEATRE HAND</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="020256">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">BOOT MAKER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="023578">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">MEDICAL LABORATORY SCIENTIST/ SENIOR/ PRINCIPAL</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="025689">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">MATRON III</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="025895">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SPECIALIST- HEAD OF DEPARTMENT</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="026971">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">MINISTER'S DRIVER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="027024">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">GROUNDS MAN ASSISTANT</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="03">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PRINCIPAL DIRECTOR PREVENTIVE</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="030022">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">ASSISTANT CHIEF RADIOGRAPHER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="030023">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">TAILOR ASST</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="030024">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">ASSISTANT CLINICAL PSYCHOLOGIST</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="030027">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">ASSISTANT LAUNDRY SUPERINTENDTENT</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="030028">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SENIOR LAUNDRY HAND</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="035566">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SENIOR AMBULANCE DRIVER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="035567">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">AMBULANCE DRIVER/ SENIOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="035631">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SCN</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="035704">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">MEDICAL LABORATORY ASSISTANT</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="036691">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">ARTISAN</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="036857">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SENIOR INSTRUCTOR RADIOGRAPHER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="036958">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PARALEGAL CLERK</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="037513">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">TYPIST/STENOGRAPHER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="039643">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">REGISTRY CLERK/CLASSIFIER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="039644">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">RECORDS AND INFOR ASSISTANT</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="039645">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">REGISTRY SUPERVISOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="039647">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">RECORDS AND INFORMATION SUPERVISOR (DIPLOMA)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="039651">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">RECORDS AND INFOR ASSISTANT - DIPLOMA</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="039714">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SENIOR EXECUTIVE ASSISTANT (TYPING SUPERVISOR DIPLOMA)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="039722">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PRIVATE SECRETARY 1</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="039725">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SENIOR EXECUTIVE  ASSISTANT (PRIVATE SECRETARY 1 HND)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="039727">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">CLERK</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="039729">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">HUMAN RESOURCES ASSISTANT</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="04">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PRINCIPAL DIRECTOR PLANNING AND EVALUATION</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="041099">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">EXECUTIVE OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="041102">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">ADMINISTRATION OFFICER </xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="041511">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">HUMAN RESOURCES OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="041517">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">ADMINISTRATION  ASSISTANT</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="042024">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">AUDIT ASSISTANT</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="042284">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">ACCOUNTING ASSISTANT</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="044444">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">NUTRITIONIST</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="044558">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SENIOR CRECHE SUPERVISOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="045123">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">CHIEF GOVERNMENT PATHOLOGIST</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="045189">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PHYSICIST /SENIOR/PRINCIPAL</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="045789">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">CHIEF MEDICAL LABORATORY SCIENTIST</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="045896">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PMTCT MANAGER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="045940">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">ASSISTANT LIBRARIAN</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="045941">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">LIBRARIAN (DIPLOMA)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="046982">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">INTERNAL AUDITOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="046983">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">CHIEF INTERNAL AUDIT</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="047567">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">CHIEF RADIOGRAPHER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="047852">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">CHIEF PHYSICIST</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="047871">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SNR CLINICAL PSYCHOLOGIST</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="047875">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">CLINICAL PSYCHOLOGIST/ SENIOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="047937">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DIRECTOR OF FINANCE</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="047938">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DEPUTY DIRECTOR BLAIR RESEARCH</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="047998">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DISTRICT MEDICAL OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="048000">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">GOVERNMENT MEDICAL OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="048028">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">GOVERNMENT ANALYST</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="048032">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DEPUTY GOVERNMENT ANALYST</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="048060">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DEPUTY DIRECTOR DISEASE PREVENTION CONTROL</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="048062">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">GOVERNMENT DENTAL OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="048070">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SENIOR GOVERNMENT DENTAL OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="048074">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DIRECTOR ORAL HEALTH SERVICES</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="048131">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">MEDICAL SPECIALIST</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="048132">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">MEDICAL SUP II-MEDICAL SPECIALIST PERSONAL</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="048152">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">HARDWARE MAINTENANCE MANAGER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="048156">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">HOSPITAL MEDICAL OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="048157">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SENIOR HOUSE OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="048284">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">MEDICAL OFFICER OF HEALTH</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="048287">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DIRECTOR TECHNICAL SUPPORT</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="048288">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PROVINCIAL MEDICAL DIRECTOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="048301">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">MEDICAL PYSCHIATRIC SOCIAL WORKER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="048318">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">MEDICAL RESEARCH OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="048352">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">MEDICAL SUPERINTENDENT</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="048393">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PHARMACIST</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="048398">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">CHIEF PHARMACIST</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="048440">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PHYSICIST/ CHIEF</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="048482">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">JUNIOR REGISTRAR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="048490">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SENIOR REGISTRAR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="05">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">CHIEF ENGINEER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="050258">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">ANALYTICAL CHEMIST</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="055687">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">ASSISTANT ARTISANS</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="056610">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">ARTIST </xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="056650">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DENTAL TECHNICIAN</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="056660">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DENTAL TECHNICIAN TRAINEE</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="056666">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DENTAL THERAPIST</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="056670">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DENTAL THERAPIST TRAINEE</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="056680">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DOMESTIC SERVICES MANAGER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="056697">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PC TECHNICIAN</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="056698">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">TECHNICIAN</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="056744">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">FIELD OFFICE SENIOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="056826">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">MEDICAL RECORDS OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="056830">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">MEDICAL RESEARCH OFFICER ASSISTANT</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="056880">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">MEDICAL RECORDS OFFICER ASSISTANT</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="056883">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">CHIEF ORTHOPAEDIC TECHNOLOGIST</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="056896">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">ORTHOPAEDIC TECHNOLOGIST- (DIPLOMA)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="058741">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SHOPFITTER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="0589417">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DIRECTOR OF OPERATIONS</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="06">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DIRECTOR ENVIRONMENTAL HEALTH</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="060206">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">STORES OFFICER 2</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="063789">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">CARETAKER / GROUNDSMAN</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="064589">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">MAINTENANCE OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="064743">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">FARM MANAGER II</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="066583">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">TECHNICAL ASSISTANT (LABORATORY)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="067456">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">TRAINEE RADIOGRAPHER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="067460">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">RADIOGRAPHER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="067875">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">ENVIRONMENTAL HEALTH OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="067912">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">ENVIRONMENTAL HEALTH OFFICER TRAINEE</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="067992">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">CHIEF HOSPITAL TECHNOLOGIST-HIGHER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="067994">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">HOSPITAL EQUIPMENT TECHINICIAN /SENIOR/HIGHER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="068070">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">MEDICAL LABORATORY TECHNOLOGIST/SENIOR/PRINCIPAL</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="068080">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">MEDICAL LABORATORY TECHNOLOGIST ( GRADUATE)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="068092">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">CHIEF MEDICAL LABORATORY TECHNOLOGIST</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="068115">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">TRAINEE MED/ VET LAB. TECHNOLOGIST(NON GRADUTE)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="068195">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SCIENTIFIC LABORATORY TECHNICIAN</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="068202">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">CHIEF SCIENTIFIC MEDICAL LABORATORY TECHNCIAN</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="068208">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">MEDICAL LABORATORY SCIENTIST/ TECHNICIAN</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="068212">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SCIENTIFIC LABORATORY TECHNICIAN TRAINEE</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="069780">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PHARMACEUTICAL TECHNICIAN</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="069788">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PHARMACEUTICAL TECHNICIAN TRAINEE</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="069852">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PAINTER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="07">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DIRECTOR EPIDEMIOLOGY AND DISEASE CONTROL</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="073410">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">MEDICAL SECRETARY</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="073515">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PHYSIOTHERAPIST</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="073658">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SENIOR CLINICAL NURSING OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="073726">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">CHIEF DIETICIAN (DIRECTOR OF NUTRITION0</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="073736">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">MEDICAL HEALTH SERVICES COORDINATOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="073747">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">REPRODUCTIVE HEALTH COORDINATOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="073753">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">MANAGER ( EPI)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="073757">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">STI/AIDS PREVENTION OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="073763">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">NON COMMUNICABLE DISEASE CONTROL OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="073764">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">NUTRITION INTERVENTION OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="073770">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">RAPID DISEASE EPI SURVELLIANCE MANAGER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="073786">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">HEALTH INFORMATION ASSISTANT</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="073792">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">INTERGRATED MANAGEMENT OF CHILD ILLNESS OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="073801">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">EEG/ECG TECHNICIAN</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="073821">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">EEG/ECG TECHNICIAN TRAINEE</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="073864">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PRINCIPAL ENVIRONMENTAL HEALTH TECHINICIAN</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="073906">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">HEALTH INFORMATION OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="073908">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">HEALTH PROMOTION OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="073930">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PUBLIC RELATIONS OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="073973">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">MATRON 111 ( THEATRE/ANAESTHETICS)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="074018">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">REHAB TECHNICIAN/ SENIOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="074025">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PRINCIPAL STATE CERTIFIED NURSE</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="074122">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PRIMARY HEALTH CARE  NURSE</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="074125">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">STUDENT NURSE</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="074127">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">TRAINEE PRIMARY CARE NURSE</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="074162">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">CHIEF BUYER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="074376">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PRINCIPAL NURSING OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="074410">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PRINCIPAL TUTOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="074416">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">NURSING TUTOR/SENIOR/PRINCIPAL</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="074440">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">ASSISTANT NUTRITIONIST</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="074452">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SPEECH / OCCUPATIONAL THERAPIST</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="074488">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PRINCIPAL PHYSIOTHERAPIST</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="074577">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">CHIEF THERAPIST</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="074589">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SENIOR WARD DOMESTIC SERVICES SUPERVISOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="074605">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SISTER GENERAL/ SENIOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="074606">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SENIOR SISTER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="074613">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SISTER GENERAL GRADUATE / THEATRE ANAESTHETICS</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="074635">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SISTER IN CHARGE</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="074636">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SISTER IN CHARGE THEATRE ANAESTHETICS</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="074637">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">CLINICAL INSTRUCTOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="074896">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">HOSPITAL FOOD SERVICES SUPERVISOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="077560">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PATHOLOGIST</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="08">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DIRECTOR FAMILY HEALTH</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="088745">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SENIOR RESIDENT MEDICAL OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="09">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DIRECTOR FINANCE AND ADMINSTRATION</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="0987410">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">QUALITY ASSURANCE  OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="10">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DIRECTOR HIV, AIDS, STI AND TB</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="100">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">RADIATION PROTECTION OFFICER/SENIOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="100000">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">ENVIRONMENTAL HEALTH TECHNICIAN</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="10012">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DENTAL TECHNICIAN TUTOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="100536">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">RECORDS  AND INFORMATION SUPERVISOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="102589">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">ORTHOPAEDIC TECHNOLOGIST ASSISTANT CHIEF</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="11">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DIRECTOR HUMAN RESOURCES</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="110200">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">HEAD / CHEF</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="110650">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">LINEN SUPERVISOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="1111">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">OCCUPATIONAL THERAPY TRAINER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="111101">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">STORES ASSISTANT 1</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="1111111">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">MEDICAL OFFICER OF HEALTH (EPID-DISEASE CONTROL)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="1111113">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PROVINCIAL HIV /AIDS/STI/TB OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="1111114">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PROVINCIAL MALARIA /EPIDEMIC DISEASES CONTROL OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="111112">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">MEDICAL OFFICER OF HEALTH (MATERNAL &amp; CHILD HEALTH)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="111115">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PROVINCIAL HEALTH INFORMATION OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="111116">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PROVINCIAL PHARMACIST</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="111117">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PROVINCIAL HEALTH INFORMATION ASSISTANT</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="111118">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PROVINCIAL NUTRITIONIST</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="111119">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PROVINCIAL ENVIRONMENTAL HEALTH OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="111120">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PROVINCIAL NURSING OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="111122">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PRINCIPAL ENVIRONMENTAL HEALTH OFFICER (DIPLOMA)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="111123">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PROVINCIAL PRIMARY CARE OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="111124">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PROVINCIAL CHILD CARE OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="111125">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PROVINCILA CHILD WELFARE OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="111126">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PROVINCIAL HEALTH SERVICES ADMINISTRATOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="111127">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">TRAINEE ENVIRONMENTAL HEALTH OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="111129">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PROVINCIAL TB COORDINATOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="11117">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">HOSPITAL EQUIPMENT TECHNICIAN ASSISTANT CHIEF</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="1114">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DUPLICATION OPERATOR/SENIOER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="111550">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">CRECHE SUPERVISOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="1116">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">INTERGRATED MANAGEMENT OF CHILDHOOD ILLNESS MANAGER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="111713">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">HAND MAN</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="111880">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">ORDERLY STEWARD 11</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="112261">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">TAILOR 1/II</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="112760">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DENTAL SURGERY ASSISTANT</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="112832">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">INSTITUTIONAL DOMESTIC SUPERVISOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="112982">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">HOUSE KEEPER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="113300">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PACKER,CSSD,SENIOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="113471">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SENIOR STORES ASSISTANT</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="113650">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">THEATRE DISPOSAL SUPERVISOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="113850">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">ASSISTANT CATERING SUPERVISOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="113960">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">LAUNDRY SUPERINTENDEND ASSISTANT</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="114100">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">CLEANING SURPERVISOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="114300">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">LADY WARDEN</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="114320">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">LINEN ROOM CONTROLLER 2</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="114763">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">STOREMAN</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="114940">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">WARD DOMESTIC SUPERVISOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="115700">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">OCCUPATIONAL THERAPIST</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="116050">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SUPERVISOR(HEALTH)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="116052">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">MORTUARY SUPERVISOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="116081">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SUPERVISOR 1</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="116411">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">BLOCKMAN</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="116850">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">LAUNDRY SUPERITENTENDENT 1</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="118400">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">STEWARD /SECURITY</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="119000">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">CATERING  MANAGER /SUPERINTENDENT</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="119500">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">LAUNDRY MANAGER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="12">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DIRECTOR NURSING SERVICES</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="1200">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DISTRICT NURSING OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="120488">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">COOK</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="120950">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">LINEN CHECKER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="121025">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">MORTUARY ATTENDANT 11</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="12120">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">MEDICAL LABORATORY TECHNCIAN</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="121300">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SEWING SUPERVISOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="121551">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">TECHNICAL ASSISTANT 1</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="121700">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">XRAY OPERATOR TRAINEE</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="122">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">COMISSIONING OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="122360">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DISPENSARY ASSISTANT</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="122600">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">FIELD SUPERVISOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="12345">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">EMERGENCY PREPAREDNESS MANAGER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="123662">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">STORES ASSISTANT 11</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="123698">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DEPUTY CHIEF PATHOLOGIST</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="125023">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">LABORATORY HAND</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="125150">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">MORTUARY ATTENDANT 1</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="126304">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DRIVER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="126750">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">LEPROSY SCOUT</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="128">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">HOSTEL WARDEN</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="128273">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">CATERING  SUPERVISOR  </xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="128400">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">CSSD PACKER/ SENIOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="128700">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">HOSPITAL EQUIPMENT REPAIRER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="129300">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SEAMSTRESS</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="129400">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SENIOR FIELD SUPERVISOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="129572">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">LABORATORY HANDY SENIOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="129700">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">TRAINEE IDS</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="13">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DIRECTOR PERFORMANCE MANAGEMENT</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="131300">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">LAUNDRY HAND</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="131752">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">OFFICE ORDERLY</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="132102">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">STORES HAND</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="132250">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">TRAINEE ENVERONMENTAL HEALTH TECHNICIAN</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="132300">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">REHABILITATION ASSISTANT TRAINEE</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="132421">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">WAITER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="133200">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">GENERAL HAND</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="133202">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">HOSPITAL HAND</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="133230">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">HOSPITAL SECURITY GUARD</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="134203">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SECURITY GUARD</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="135">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PERSONAL ASSISTANT TO MINISTER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="135752">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">FIELD ORDERLY</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="136450">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">MORTUARY ATTENDANT 111</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="137">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PROCUREMENT OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="137103">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SENIOR HAND </xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="137172">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SENIOR OFFICE ORDERLY</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="137220">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SEWING ASSISTANT (PERSONAL TO HOLDER)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="137223">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SEWING ASSISTANT</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="137400">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">TRAINEE STATE CERT. LAB. ASSISTANT</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="137630">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SUPERVISOR ASSISTANT </xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="137720">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">BUTCHERY HAND</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="137860">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DARKROOM ASSISTANT</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="138181">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">HEALTH ORDERLY</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="138403">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">LABORATORY HAND 11</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="138550">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">NURSE AID</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="138600">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">ORTHOPAEDIC ASSISTANT 11</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="138854">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">COPYING/DUPLICATING OPERATOR SENIOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="139251">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">STORES ASSISTANT 111</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="139752">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">WORKSHOP HAND</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="139900">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">XRAY ATTENDANT</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="14">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DIRECTOR PHARMACY SERVICES</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="15">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DIRECTOR POLICY AND PLANNING</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="16">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DIRECTOR QUALITY ASSURANCE</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="17">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DIRECTOR TRADITIONAL MEDICINE</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="18">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DEPUTY DIRECTOR NURSE TRAINING AND ADMINISTRATION</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="19">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">WATER SANITATION AND WASTE MANAGEMENT COORDINATOR </xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="20">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">FOOD SAFETY AND PORT HEALTH COORDINATOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="20202">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">ENVIRONMENTAL TECHNCIAN</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="21">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">WATER AND SANITATION MANAGER/WASTE  MANAGER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="21210">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SCIENTIFIC LABORATORY TECHNCIAN</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="22">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PORT HEALTH MANAGER/FOOD SAFETY MANAGER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="22233">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DIRECTOR GOVERNMENT ANALYST</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="22255">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DEPUTY DIRECTOR GOVERNMENT ANALYST/FOOD CONTROL</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="23">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">CHIEF RADIATION PROTECTION OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="23233">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">CHIEF FIELD SUPERVISOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="24">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PHARMACY LOGISTICS AND RESEARCH COORDINATOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="25">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PHARMACY LOGISTICS AND RESEARCH OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="256123">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">MATRON II</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="26">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PHARMACIST SENIOR/PRINCIPAL (TRAINING OFFICER)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="27">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PHARMACY CADET</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="28">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">TRAINEE PHARMACY TECHNICIAN</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="29">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DEPUTY DIRECTOR NUTRITION</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="30">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">NUTRITION INTERVENTION MANAGER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="300003">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">HEALTH TRAINING OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="300005">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">STATE CERTIFIED MEDICAL LABORATORY TECHNICIAN/SNR TRAINEE</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="300007">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">ORTHOPEADIC ASSISTANT</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="300008">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PROVINCIAL EPI OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="300009">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PROVINCIAL EPIDEMIOLOGY/DISEASE CONTROL OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="300010">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PROVINCIAL HEALTH PROMOTION OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="300015">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DIRECTOR BLAIR RESEARCH</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="300018">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PRINCIPAL MEDICAL RESEARCH OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="300019">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">EXECUTIVE ASSISTANT/SENIOR/PRINCIPAL</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="300020">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">TRAINEE MIDWIVES</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="300021">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SENIOR FIELD ORDERLY</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="300022">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DENTAL THERAPY TUTOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="300024">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PHYSIOTHERAPY /OCCUPATIONAL/TUTOR/SENIOR/PRINCIPAL</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="300025">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SENIOR REHABILITATION TECHNICIAN</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="300026">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">REHABILITATION  TECH  TUTOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="300030">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">COXSWAIN</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="300031">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DISTRICT ENVIRONMENTAL HEALTH OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="3036">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">EXECUTIVE OFFICER OF HEALTH</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="31">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">NUTRITION EMERGENCY PREPAREDNESS AND SURVEILLANCE MANAGER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="32">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">NUTRITIONIST SENIOR/PRINCIPAL (TRAINING OFFICER)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="33">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">NUTRITION LOGISTICS OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="336651">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SYSTEMS ADMINISTRATOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="34">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">TRAINEE INSTITUTIONAL DOMESTIC SUPERVISOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="35">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">TB REFERENCE LABORATORY SERVICES COORDINATOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="36">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">MICROBIOLOGY REFERENCE LABORATORY SERVICES COORDINATOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="369521">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">MEDICAL SOCIAL WORKER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="369852">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">CHIEF ACCOUNTANT</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="37">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">CLINICAL LABORATORY SERVICES COORDINATOR </xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="38">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">TRADITIONAL MEDICINE POLICY AND PRACTICE CONTROL COORDINATOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="39">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">TRADITIONAL MEDICINE RESEARCH AND INFORMATION COORDINATOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="40">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">HEALTH PROMOTION COORDINATOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="41">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">HEALTH PROMOTION MANAGER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="42">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">GRAPHIC ARTIST</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="43">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">HEALTH INFORMATION AND SURVEILLANCE COORDINATOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="44">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SURVEILLANCE MANAGER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="45">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">HIV AND AIDS STI AND TB SURVEILLANCE</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="46">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">HEALTH INFORMATION MANAGER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="47">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">HEALTH SURVEILLANCE OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="48">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SURVEILLANCE ASSISTANT </xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="49">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DEPUTY DIRECTOR HOSPITAL PLANNING AND PROJECT MANAGEMENT</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="50">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">HOSPITAL EQUIPMENT MANAGER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="51">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">HOSPITAL PLANNING MANAGER(ENGINEER)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="52">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">FACILITIES PLANNING ADMINISTRATIVE OFFICER SENIOR/PRINCIPAL</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="524163">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">COMPUTER TECHNICIAN</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="525236">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">OFFICE ORDERLIES</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="53">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">INFRASTRUCTURE MAINTENANCE OFFICER(ADMINISTRATIVE OFFICER)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="54">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">QUALITY ASSURANCE COORDINATOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="55">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PERFORMANCE MONITORING AND EVALUATION</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="55588">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DIETICIAN</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="56">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DEPUTY DIRECTOR POLICY AND PLANNING</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="56565">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DEPUTY DIRECTOR GOVERNMENT ANALYST/ADMIN,TOXI, CLINICAL</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="57">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">LEGISLATION OFFICER SENIOR/PRINCIPAL</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="58">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">STRATEGY AND POLICY DEVELOPMENT OFFICER SENIOR PRINCIPAL</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="59">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PLANNING AND DONOR COORDINATION OFFICER SENIOR PRINCIPAL</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="60">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DEPUTY DIRECTOR HUMAN RESOURCES</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="62">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">HUMAN RESOURCES OFFICER SENIOR/PRINCIPAL</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="63">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PRINCIPAL EXECUTIVE ASSISTANT</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="64">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">LIBRARIAN SENIOR/PRINCIPAL</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="65">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">AUDITOR /SENIOR/ PRINCIPAL</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="66">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">ACCOUNTANT SENIOR/ PRINCIPAL</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="665214">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">CARPENTER (I/II/III)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="669810">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">RECORDS AND INFORMATION ASSISTANT</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="669852">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">ORTHOPAEDIC ASSISTANT FITTER/ SEC</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="67">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">INFORMATION TECHNOLOGY COORDINATOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="68">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SOFTWARE PROGRAMME ANALYST</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="69">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">GIS TECHNICIAN</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="693258">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">MORTUARY HANDS</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="70">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DEPUTY DIRECTOR ADMINSTRATION</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="71">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">LOGISTICS AND ADMINSTRATION OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="73">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">ADOLESCENT HEALTH SERVICES MANAGER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="74">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">REPRODUCTIVE HEALTH SERVICES MANAGER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="741996">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">LINEN CHEKER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="7489256">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">MANAGER INTERNAL AUDIT</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="75">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">OCCUPATIONAL HEALTH AND INJURY COORDINATOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="76">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">OCCUPATIONAL HEALTH AND INJURY MANAGER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="77">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">MENTAL HEALTH DEPUTY DIRECTOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="78">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">MENTAL HEALTH SERVICES MANAGER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="789045">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PRIMARY HEALTH CARE WORKER TRAINER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="789625">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PHARMACY STORES CONTROLLER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="79">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DEPUTY DIRECTOR STI, HIV AND AIDS</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="80">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DEPUTY DIRECTOR TB CONTROL</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="8000">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">OPERATIONS MANAGER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="80000">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">CADET</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="80001">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DEPUTY MINISTER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="80002">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">MINISTER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="80005">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">BOARD MEMBER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="80006">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">CHAIRMAN (HSB)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="8001">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PROVINCIAL THERAPIST</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="81">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">COUNSELLING SERVICES MANAGER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="82">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">STI, HIV AND AIDS PREVENION CARE MANAGER </xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="83">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">CONDOM PROMOTION AND COMMUNICATION MANAGER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="84">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">TB CONTROL MANAGER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="85">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">LOGISTICS TB MANAGER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="86">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DEPUTY DIRECTOR COMMUNITY NURSING</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="87">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DIRECTOR LABORATORY SERVICES</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="885204">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">ASSISTANT SYSTEMS ADMINISTRATOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="885623">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">HOME WARDEN</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="9000">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">ORTHOPAEDIC TECHNOLOGIST</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="9001">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">EXPANDED PROGRAM FOR IMMUNISATION OFFICER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="9002">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">TB COODINATOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="90020">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">PSYCHIATRIC TRAINEE</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="9050">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">HOSPITAL ENGINEER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="963525">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">CARPENTER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="965823">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">DATA CAPTURE SUPERVISOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="965834">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">CATERING ATTENDANT I/II</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="985623">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">LINEN CONTROLLER I/II</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="996541">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">ASSISTANT HOSTELS SUPERVISOR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="9985623">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SENIOR TUTOR RADIOGRAPHY</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType>
+    <xs:restriction base="xs:string" name="CL_VALUE_TYPE">
+      <xs:enumeration value="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Target</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Value</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="TIME_PERIODType">
+    <xs:restriction base="common:TimePeriodType"/>
+  </xs:simpleType>
+  <xs:simpleType name="OBS_VALUEType">
+    <xs:restriction base="xs:decimal"/>
+  </xs:simpleType>
+  <xs:element name="DataSet" type="DataSetType" substitutionGroup="cross:DataSet"/>
+  <xs:complexType name="DataSetType">
+    <xs:complexContent>
+      <xs:extension base="cross:DataSetType">
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="Group"/>
+          <xs:element ref="Section"/>
+          <xs:element name="Annotations" type="common:AnnotationsType"/>
+        </xs:choice>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Group" type="GroupType" substitutionGroup="cross:Group"/>
+  <xs:complexType name="GroupType">
+    <xs:complexContent>
+      <xs:extension base="cross:GroupType">
+        <xs:sequence>
+          <xs:element ref="Section" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element name="Annotations" type="common:AnnotationsType" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attribute name="FREQ" type="CL_FREQ" use="optional"/>
+        <xs:attribute name="FACILITY" type="CL_FACILITY" use="optional"/>
+        <xs:attribute name="VALUE_TYPE" type="CL_VALUE_TYPE" use="optional"/>
+        <xs:attribute name="TIME_PERIOD" type="TIME_PERIODType" use="optional"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Section" type="SectionType" substitutionGroup="cross:Section"/>
+  <xs:complexType name="SectionType">
+    <xs:complexContent>
+      <xs:extension base="cross:SectionType">
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="OBS_VALUE"/>
+          <xs:element name="Annotations" type="common:AnnotationsType"/>
+        </xs:choice>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="OBS_VALUE" type="ObsType" substitutionGroup="cross:Obs"/>
+  <xs:complexType name="ObsType">
+    <xs:complexContent>
+      <xs:extension base="cross:ObsType">
+        <xs:sequence>
+          <xs:element name="Annotations" type="common:AnnotationsType" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attribute name="DATAELEMENT" type="CL_POST" use="optional"/>
+        <xs:attribute name="FACILITY" type="CL_FACILITY" use="optional"/>
+        <xs:attribute name="VALUE_TYPE" type="CL_VALUE_TYPE" use="optional"/>
+        <xs:attribute name="value" type="OBS_VALUEType" use="optional"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+</xs:schema>
